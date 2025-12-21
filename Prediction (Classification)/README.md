@@ -1,6 +1,6 @@
 ![titanic.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Titanic/titanic1.jpg.png?raw=true)
 
-I am doing a forecasting about the number of passengers survival outcomes following a disaster.
+I am doing a forecasting about the number of passengers survival outcomes following a famous disaster in history.
 
 # Table of Contents
 1. [Chapter 1 - Project Overview](#ch1)
