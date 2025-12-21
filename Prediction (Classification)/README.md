@@ -32,24 +32,24 @@ Let's take a look at the steps:
 1. **Problem Definition:** What factors influenced survival in a disaster? By analyzing passenger data, we are able to identify specific groups that had a higher likelihood of survival.
 2. **Data Gathering:** I got the dataset from a website.
 3. **Data Preparation:** I cleaned the dataset by remove the duplicates and blanks or outliers.
-4. **EDA (Exploratory Data Analysis):** If poor quality data is fed into a system, the results will be equally poor. That is why it is important to apply descriptive and visual statistics to uncover patterns, relationships and comparisons within the dataset. At this stage, I will examine the data to ensure it was clear, consistent and meaningful.
-5. **Data Modeling:** It is important to know when to select a model. If we choose the wrong model for a particular use case, all other steps become pointless. 
-6. **Validate Model:** After training the model, I checked its performance and looked for any issues with overfitting or underfitting.
-7. **Optimize Model:** Using techniques like hyperparameter optimization, I worked on making the model better.
+4. **EDA (Exploratory Data Analysis):** If poor quality data is fed into a system, the results will be equally poor. That is why it is important to apply descriptive and visual statistics to uncover patterns, relationships and comparisons within the dataset. At this stage, I will examine the data to ensure whether it is clear, consistent and meaningful.
+5. **Data Modeling:** Choosing the right model is critical. If an inappropriate model is selected for a given use case, the effectiveness of all subsequent steps is compromised. 
+6. **Validate Model:** I will evaluate its performance and assessed after training as whether it showed signs of overfitting or underfitting.
+7. **Optimize Model:** I improved the model by applying techniques such as hyperparameter optimization to enhance its performance.
 
 <a id="ch3"></a>
 # Step 1: Problem Definition
-The goal of this project is to predict the survival outcomes of passengers on the Titanic.
+The objective of this project is to predict the number of passengers on the Titanic survived when the disaster striked.
 
-**Project Summary from Kaggle:**
-The sinking of the Titanic is one of the most famous maritime disasters in history. On April 15, 1912, the RMS Titanic sank after colliding with an iceberg. This was considered to be an unsinkable ship, but nonetheless it went down due to the accident. Unfortunately, there weren't enough lifeboats for everyone on the ship, resulting in the death of 1502 people out of 2224 passengers and crew.
+**Project Summary**
+The Titanic disaster is one of the most well-known maritime tragedies in history. On April 15, 1912, the RMS Titanic sank after striking an iceberg. Although it was widely believed to be unsinkable, the ship was lost due to the collision. With insufficient lifeboats on board, 1,502 out of the 2,224 passengers and crew members lost their lives.
 
-Some groups of people seemed to be more likely to survive than others, although luck was involved. In this challenge, they want us to create a predictive model that can identify who is more likely to survive based on data about passengers (name, age, gender, social class, etc).
+Certain groups of passengers appeared to have a higher likelihood of survival than others, though luck also played a role. In this challenge, the objective is to develop a predictive model that determines an individual’s probability of survival based on passenger data such as name, age, gender, social class and other relevant attributes.
 
 <a id="ch4"></a>
 # Step 2: Data Gathering
 
-The dataset can be found on Kaggle's main page for this project: [Kaggle's Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic/data)
+The dataset can be found here: [Titanic: Exploratory Data Analysis with Python Pandas]()
 
 <a id="ch5"></a>
 # Step 3: Data Preperation
