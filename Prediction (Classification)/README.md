@@ -9,13 +9,7 @@ I am doing a forecasting about the number of passengers survival outcomes follow
 1. [Chapter 4 - Step 2: Data Gathering](#ch4)
 1. [Chapter 5 - Step 3: Data Preparation](#ch5)
 1. [Chapter 6 - Step 4: Explanatory Data Analysis (EDA)](#ch6)
-1. [Chapter 7 - Step 5: Data Modelling](#ch7)
-1. [Chapter 8 - Evaluate Model Performance](#ch8)
-1. [Chapter 9 - Model Performance with Cross-Validation (CV)](#ch9)
-1. [Chapter 10 - Tune Model with Hyper-Parameters](#ch10)
-1. [Chapter 11 - Tune Model with Feature Selection](#ch11)
-1. [Chapter 12 - Step 6: Validate Model](#ch12)
-1. [Chapter 13 - Conclusion](#ch13)
+1. [Chapter 13 - Conclusion](#ch7)
 
 
 <a id="ch1"></a>
@@ -166,114 +160,21 @@ Drop the 'Cabin' column from the dataset:
 
 ![Idata_characteristics.jpg](/Image/Titanic/titanic7.PNG) 
 
-Next, I compared sex with a second feature:
+Next, I created a new DataFrame containing only passengers with an age greater than 30.
+Sort the DataFrame by 'Fare' in descending order:
 
-![Titanic_Project_31_1.jpg](/images/titanic/titanic6.jpg)
+![Idata_characteristics.jpg](/Image/Titanic/titanic8.PNG) 
 
-I examined the relationships between family size and sex with respect to survival as well as between passenger class and sex with respect to survival.:
+I also calculated the survival rate for different passenger classes ('Pclass').
+Identify and display the passenger with the highest 'Fare':
 
-![Titanic_Project_32_1.jpg](/images/titanic/titanic7.jpg)
-
-I also visualized embarkation data in conjunction with passenger class and sex while analyzing their relationships with survival.:
-
-![Titanic_Project_33_1.jpg](/images/titanic/titanic8.jpg)
-
-The age distributions of passengers who survived and those who did not survive:
-
-![Titanic_Project_34_1.jpg](/images/titanic/titanic9.jpg)
-
-A histogram-based comparison of sex, passenger class and age, stratified by survival status:
-
-![Titanic_Project_35_1.jpg](/images/titanic/titanic10.jpg)
-
-A pairplot was used to visualize the entire dataset and examine relationships among all variables:
-
-![Titanic_Project_36_1.jpg](/images/titanic/titanic11.jpg)
-
-A heatmap was generated to visualize correlations across all variables in the dataset:
-
-![Titanic_Project_37_0.jpg](/images/titanic/titanic12.jpg)
+![Idata_characteristics.jpg](/Image/Titanic/titanic9.PNG) 
 
 <a id="ch7"></a>
-# Step 5: Data Modelling
-
-I will employ a supervised learning classification algorithm to predict the binary outcome—whether a passenger survived or not.
-
-### Which Machine Learning Algorithm (MLA) to choose ?
-Selecting the most suitable model is rarely straightforward. In practice, the optimal approach involves experimenting with multiple algorithms and comparing their performance. Below, I have summarized the models I evaluated along with their respective results:
-
-![compare_mla.jpg](/images/titanic/titanic13.jpg)
-
-Let us examine the bar plot displaying the accuracy scores:
-
-![Titanic_Project_39_1.jpg](/images/titanic/titanic14.jpg)
-
-<a id="ch8"></a>
-## 5.1 Evaluate Model Performance
-Following data preprocessing, exploratory analysis and the application of various machine learning algorithms (MLAs), I achieved a passenger survival prediction accuracy of approximately 82%. Can this performance be further improved?
-
-
-### Somethings to consider: ###
-I refined the dataset by incorporating insights gained from exploratory data analysis (EDA). The following result reflects the performance of the Decision Tree model after these data enhancements:
-
-
-![handmade_model_score.jpg](/images/titanic/titanic15.jpg)
-
-The confusion matrix without normalization:
-
-![Titanic_Project_44_1.jpg](/images/titanic/titanic16.jpg)
-
-Confusion matrix with normalization:
-
-![Titanic_Project_44_2.jpg](/images/titanic/titanic17.jpg)
-
-<a id="ch9"></a>
-# 5.11 Model performance evaluated using with Cross-Validation (CV) 
-In this section, I implemented cross-validation (CV) using the [sklearn cross_validate function](https://scikit-learn.org/stable/modules/cross_validation.html#multimetric-cross-validation) function offers several advantages, including:
-
-1) Support for evaluating multiple scoring metrics simultaneously.
-2) Provision of a dictionary that includes not only the test scores but also the fit times and score times.
-   
-By employing cross-validation (CV), I was able to automatically split the data and evaluate the model multiple times, providing a robust estimate of its performance on unseen data.
-
-<a id="ch10"></a>
-# 5.12 Optimize the model by using Hyperparameters
-I conducted hyperparameter optimization to assess how different hyperparameter configurations affect the model’s accuracy.
-
-Decision trees are generally intuitive and easy to interpret which often visualizable and makes them accessible. They require relatively minimal data preprocessing compared to other algorithms and can naturally handle both numerical and categorical features. Additionally, their performance can be validated using statistical tests.
-
-However, decision trees tend to generalize poorly to unseen data as they are more prone to overfitting by essentially memorizing the training set. This issue can be mitigated through techniques like pruning. Moreover, they can be highly sensitive to minor variations in the data and may exhibit bias toward dominant classes when the class distribution is imbalanced.
-
-DT prior to any optimization:
-
-![dt_parameters.jpg](/images/titanic/titanic18.jpg)
-
-<a id="ch11"></a>
-## 5.13 Optimize the model through feature selection
-Recursive feature elimination (RFE) with cross validation (CV) is used for feature selection:
-
-![feature_elimination.jpg](/images/titanic/titanic19.jpg)
-
-<a id="ch12"></a>
-# Step 6: Models correlations
-
-A heatmap comparing algorithm predictions against one another where a value of 1 indicates high similarity and 0 indicates dissimilarity:
-
-![Titanic_Project_54_0.jpg](/images/titanic/titanic20.jpg)
-
-I have been experimenting with ensemble methods by combining multiple models rather than selecting a single one which enabled me to construct a "supermodel." As part of this process, I removed any model that was perfectly correlated (correlation = 1) with another to avoid redundancy.
-
-I explored various voting strategies which both hard (majority-based) voting and soft voting based on weighted probabilities. Prior to assembling the supermodel, I carefully tuned each individual estimator to optimize its performance
-<a id="ch13"></a>
 # Conclusion
 
-The model attained an accuracy of approximately 78% on unseen data using a basic decision tree. This raises the question: which approach is better suited for my dataset? A simple decision tree or an enhanced version? Interestingly, the untuned (default) simple decision tree yielded a higher initial submission score and even after hyperparameter tuning, the best accuracy achieved matched that of the simple model.
-
-Notably, the cross-validation accuracy was significantly higher than the submission score.
-
-Moving forward, I plan to focus on additional preprocessing and more sophisticated feature engineering to bridge this gap and improve both the cross-validation as well as overall model accuracy.
-
-<a id="ch90"></a>
+The ananlysis of the Titanic dataset reveals clear differences in survival rates across passenger classes. First class passengers had the highest survival rate (=63%), followed by second-class (=47%), while third-class passengers had the lowest survival rate(=24%). This suggests that socio-economic status played a significant role in survival chances.
+Additionally, the passengers with the highest fare (512.33) was Ward, Miss Anna, a 3 years old female travelling inn first class, who survived.This highlights the association between higher ticket cost, travel class and increased livelihood  of survival. 
 
 
 
