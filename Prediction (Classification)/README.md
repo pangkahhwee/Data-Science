@@ -90,9 +90,9 @@ from pandas.plotting import scatter_matrix
 ```
 
 **The input data ** 
-Core Libraries
+Core Libraries</a>
 
-sys: System-specific pparameters and functions
+</a>sys: System-specific pparameters and functions</a>
 pandas (pd): Data manipulation and analysis with DataFrames
 numpy (np): Numerical computing with arrays and matrices
 scipy (sp): Scientific computing (statistics, optimization, etc.)
