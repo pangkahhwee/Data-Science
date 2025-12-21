@@ -7,7 +7,7 @@ This repository holds the below projects. Currently they're binned in five diffe
 1. [Prediction (Classification)](https://github.com/pangkahhwee/Data-Science/tree/main/Predicition(Classification))
 2. [EDA (Exploratory Data Analysis)]
 3. [Prediction (Regression)]
-4. [Cluster analysis (unclassified data)]
-5. [Advanced data science (NLP, computer vision, deep neural nets)]
+4. [Cluster Analysis (Unclassified Data)]
+5. [Advanced Data Science (Computer Vision and Deep Learnings)]
 
 Each project has more detailed documentation that explains the summary and key takeaways of the project.
