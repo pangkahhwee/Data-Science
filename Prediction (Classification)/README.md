@@ -1,4 +1,4 @@
-![titanic.jpg](/images/titanic/titanic0.jpeg)
+![titanic.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Titanic/titanic1.jpg.png?raw=true)
 
 I  focused on predicting the survival data for passengers after a disaster.
 
