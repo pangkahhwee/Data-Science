@@ -2,7 +2,7 @@
 
 I am doing a forecasting about the number of passengers survival outcomes following a famous disaster in history.
 
-# Table of Contents
+## Table of Contents
 1. [Chapter 1 - Project Overview](#ch1)
 1. [Chapter 2 - Data Science Steps](#ch2)
 1. [Chapter 3 - Step 1: Problem Definition](#ch3)
@@ -21,7 +21,7 @@ I worked with a project based on my interest after watching a movie, Titanic: Ex
 Let's take a look at the steps:
 
 <a id="ch2"></a>
-# Data Science Steps
+## Data Science Steps
 1. **Problem Definition:** What factors influenced survival in a disaster? By analyzing passenger data, we are able to identify specific groups that had a higher likelihood of survival.
 2. **Data Gathering:** I got the dataset from a website.
 3. **Data Preparation:** I cleaned the dataset by remove the duplicates and blanks or outliers.
@@ -31,7 +31,7 @@ Let's take a look at the steps:
 7. **Optimize Model:** I improved the model by applying techniques such as hyperparameter optimization to enhance its performance.
 
 <a id="ch3"></a>
-# Step 1: Problem Definition
+## Step 1: Problem Definition
 The objective of this project is to predict the number of passengers on the Titanic survived when the sinking disaster striked.
 
 **Project Summary**
@@ -40,14 +40,14 @@ The Titanic disaster is one of the most well-known maritime tragedies in history
 Certain groups of passengers appeared to have a higher likelihood of survival than others, though luck also played a role. In this challenge, the objective is to develop a predictive model that determines an individual’s probability of survival based on passenger data such as name, age, gender, social class and other relevant attributes.
 
 <a id="ch4"></a>
-# Step 2: Data Gathering
+## Step 2: Data Gathering
 
 The dataset can be found here: [Titanic: Exploratory Data Analysis with Python Pandas](https://github.com/pangkahhwee/Data-Science/blob/09fb04dea0764ced3fc80ebe0a9b68e480891a98/Image/Dataset/titanic.csv)
 
 ![Downloading_data.jpg](/Image/Titanic/titanic1.PNG) 
 
 <a id="ch5"></a>
-# Step 3: Data Preperation
+## Step 3: Data Preperation
 The data was downloaded into my Github, so I only focused on cleaning it up and use it for my Data Science.
 
 ![Downloading_data.jpg](/Image/Titanic/titanic2.png) 
@@ -86,7 +86,7 @@ import seaborn as sns
 from pandas.plotting import scatter_matrix
 ```
 
-# Core Libraries 
+## Core Libraries 
 
 pandas (pd): Data manipulation and analysis with DataFrames
 
@@ -100,7 +100,7 @@ IPython: Enhanced interactive Python (typically used in Jupyter notebooks)
 
 sys: System-specific pparameters and functions
 
-# Machine Learning (sklearn) 
+## Machine Learning (sklearn) 
 
 The code imports a wide range of scikit-learn algorithms:
 
@@ -116,7 +116,7 @@ Model selection: Cross-validation and hyperparameter tuning utilities
 
 Metrics: Performance evaluation (accuracy, precision, recall, etc.)
 
-# Visualization
+## Visualization
 
 matplotlib/pyplot/pylab: Creating various plots and charts
 
@@ -126,7 +126,7 @@ scatter_matrix: Creates a grid of scatter plots for multiple variables
 
 This setup is typical for Kaggle competitions or exploratory data analysis projects where you want many ML algorithms available to experiment with.
 
-# Utilities
+## Utilities
 
 random and time: Random number generation and timing operations
 check_output: Executes shell commands from Python
@@ -145,7 +145,7 @@ I performed data cleaning by removing anomalies and outliers, imputing missing v
 
 
 <a id="ch6"></a>
-# Step 4: Explanatory Data Analysis (EDA)
+## Step 4: Explanatory Data Analysis (EDA)
 
 Following data cleaning and organization, I conducted exploratory data analysis (EDA) to examine the dataset, using visualizations to gain a deeper understanding of its characteristics, underlying patterns and statistical properties.
 
@@ -171,7 +171,7 @@ Identify and display the passenger with the highest 'Fare':
 ![Idata_characteristics.jpg](/Image/Titanic/titanic9.PNG) 
 
 <a id="ch7"></a>
-# Conclusion
+## Conclusion
 
 The ananlysis of the Titanic dataset reveals clear differences in survival rates across passenger classes. First class passengers had the highest survival rate (=63%), followed by second-class (=47%), while third-class passengers had the lowest survival rate(=24%). This suggests that socio-economic status played a significant role in survival chances.
 Additionally, the passengers with the highest fare (512.33) was Ward, Miss Anna, a 3 years old female travelling inn first class, who survived.This highlights the association between higher ticket cost, travel class and increased livelihood  of survival. 
