@@ -1,6 +1,6 @@
 ![titanic.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Titanic/titanic1.jpg.png?raw=true)
 
-I  focused on predicting the survival data for passengers after a disaster.
+I am doing a forecasting about the number of passengers survival outcomes following a disaster.
 
 # Table of Contents
 1. [Chapter 1 - Project Overview](#ch1)
@@ -21,15 +21,15 @@ I  focused on predicting the survival data for passengers after a disaster.
 
 <a id="ch1"></a>
 # Project Overview
-In this project, I chose a very popular example of classification. It is either 0 or 1. It either happened or it didn't happen. For example, cancer is positive or not, the production part is working or not working, tomorrow it will rain or not, etc.
+In this project, I selected a widely used classification task with binary outcomes: either 0 or 1 where an event either occurs or does not. Examples include whether it will rain tomorrow or whether a production component is functioning or not.
 
-I worked with the project in Kaggle's Getting Started Competition, Titanic: Machine Learning from Disaster. I  focused on predicting the survival data for passengers. I followed a process of problem definition, gathering data, preparing data, explanatory data analysis, coming up with a data model, validating the model, and optimizing the model further.
+I worked with a project based on my interest after watching a movie, Titanic: Exploratory Data Analysis with Python Pandas. I concentrated on predicting passenger survival outcomes by following a structured workflow: defining the problem, collecting, cleaning and preparing the data, performing exploratory data analysis, building a model, validating its performance and further optimizing it.
 
 Let's take a look at the steps:
 
 <a id="ch2"></a>
 # Data Science Steps
-1. **Problem Definition:** What factors determined whether someone survived a disaster? Using passenger data, we were able to identify certain groups of people who were more likely to survive.
+1. **Problem Definition:** What factors influenced survival in a disaster? By analyzing passenger data, we are able to identify specific groups that had a higher likelihood of survival.
 2. **Data Gathering:** Kaggle provided the input data on their website.
 3. **Data Preparation:** I prepared the data by analyzing data points that were missing or outliers.
 4. **EDA (Exploratory Data Analysis):** If you input garbage data into a system, you'll get garbage output. Therefore, it is important to use descriptive and graphical statistics to look for patterns, correlations and comparisons in the dataset. In this step, I analyzed the data to make sure it was understandable.
