@@ -140,34 +140,31 @@ check_output: Executes shell commands from Python
 This setup is typical for Kaggle competitions or exploratory data analysis projects where many ML algorithms available to experiment with.
 
 ## 3.2 Preview of the Data
-I have displayed the first 5 and last 5 rows of the DataFrame here. Also, the survived variable serves as the outcome (or dependent) variable, coded as 1 if the passenger survived and 0 if they did not. All other variables are independent (predictor) variables. While most variable names are self-explanatory, two merit clarification: SibSp denotes the number of siblings or spouses aboard the Titanic and Parch indicates the number of parents or children aboard the vessel.
+I have displayed the first 5 and last 5 rows of the DataFrame here to validate that I had download the corrct dataset. Also, the survived variable serves as the outcome (or dependent) variable, coded as 1 if the passenger survived and 0 if they did not. All other variables are independent (predictor) variables. While most variable names are self-explanatory, two merit clarification: SibSp denotes the number of siblings or spouses aboard the Titanic and Parch indicates the number of parents or children aboard the vessel.
 
 ![Downloading_data.jpg](/Image/Titanic/titanic3.PNG) 
 
-![pre-view_dataframe.jpg](/images/titanic/titanic1.jpg)
-
-![dataframe.jpg](/images/titanic/titanic2.jpg)
-
 <a id="ch5"></a>
 ## 3.3 Data Pre-processing: 
-I performed data cleaning by removing anomalies and outliers, imputing missing values where appropriate, enhancing features and carrying out necessary data transformations. Specifically, I used a Label Encoder to convert object-type variables into categorical representations.
+I performed data cleaning by removing anomalies and outliers, imputing missing values where appropriate, enhancing features and carrying out necessary data transformations. 
 
-The dataset was then split into a 75/25 ratio, with 75% allocated for training and 25% reserved for testing.
+![Identify_missing_data.jpg](/Image/Titanic/titanic4.PNG) 
 
 <a id="ch6"></a>
 # Step 4: Explanatory Data Analysis (EDA)
 
 Following data cleaning and organization, I conducted exploratory data analysis (EDA) to examine the dataset, using visualizations to gain a deeper understanding of its characteristics, underlying patterns and statistical properties.
 
-![Titanic_Project_28_1.jpg](/images/titanic/titanic3.jpg)
+![Idata_characteristics.jpg](/Image/Titanic/titanic5.PNG) 
 
-Examining each feature in relation to survival:
+Identify the number of passengers in each individual passenger class:
 
-![Titanic_Project_29_1.jpg](/images/titanic/titanic4.jpg)
+![Number_of_passengers.jpg](/Image/Titanic/titanic6.PNG) 
 
-I then compared passenger class with a second feature:
+I created a new column named 'FamilySize' that represents the sum of 'SibSp' and 'Parch'.
+Drop the 'Cabin' column from the dataset:
 
-![Titanic_Project_30_1.jpg](/images/titanic/titanic5.jpg)
+![Idata_characteristics.jpg](/Image/Titanic/titanic7.PNG) 
 
 Next, I compared sex with a second feature:
 
