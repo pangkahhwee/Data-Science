@@ -54,7 +54,7 @@ The dataset can be found here: [Titanic: Exploratory Data Analysis with Python P
 # Step 3: Data Preperation
 The data was downloaded into my Github, so I only focused on cleaning it up and use it for my Data Science.
 
-[Downloading the dataset](/Image/Titanic/titanic2.png) 
+![Downloading_data.jpg](/Image/Titanic/titanic2.png) 
 
 ## 3.1 Import Libraries
 
