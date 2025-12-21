@@ -1,6 +1,6 @@
 ![titanic.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Titanic/titanic1.jpg.png?raw=true)
 
-I am doing a forecasting about the number of passengers survival outcomes following a famous disaster in history.
+I am performing exploratory data analysis (EDA) on the Titanic dataset using Pandas. This dataset contains detailed information about the passengers aboard the Titanic, including demographic attributes and their survival status. The primary objective of my analysis is to uncover meaningful insights into the characteristics and patterns of the passengers, helping to better understand factors that may have influenced their chances of survival. 
 
 ## Table of Contents
 1. [Chapter 1 - Project Overview](#ch1)
