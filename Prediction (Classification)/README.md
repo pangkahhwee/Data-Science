@@ -30,9 +30,9 @@ Let's take a look at the steps:
 <a id="ch2"></a>
 # Data Science Steps
 1. **Problem Definition:** What factors influenced survival in a disaster? By analyzing passenger data, we are able to identify specific groups that had a higher likelihood of survival.
-2. **Data Gathering:** Kaggle provided the input data on their website.
-3. **Data Preparation:** I prepared the data by analyzing data points that were missing or outliers.
-4. **EDA (Exploratory Data Analysis):** If you input garbage data into a system, you'll get garbage output. Therefore, it is important to use descriptive and graphical statistics to look for patterns, correlations and comparisons in the dataset. In this step, I analyzed the data to make sure it was understandable.
+2. **Data Gathering:** I got the dataset from a website.
+3. **Data Preparation:** I cleaned the dataset by remove the duplicates and blanks or outliers.
+4. **EDA (Exploratory Data Analysis):** If poor quality data is fed into a system, the results will be equally poor. That is why it is important to apply descriptive and visual statistics to uncover patterns, relationships and comparisons within the dataset. At this stage, I will examine the data to ensure it was clear, consistent and meaningful.
 5. **Data Modeling:** It is important to know when to select a model. If we choose the wrong model for a particular use case, all other steps become pointless. 
 6. **Validate Model:** After training the model, I checked its performance and looked for any issues with overfitting or underfitting.
 7. **Optimize Model:** Using techniques like hyperparameter optimization, I worked on making the model better.
