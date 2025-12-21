@@ -49,7 +49,7 @@ Certain groups of passengers appeared to have a higher likelihood of survival th
 <a id="ch4"></a>
 # Step 2: Data Gathering
 
-The dataset can be found here: [Titanic: Exploratory Data Analysis with Python Pandas]()
+The dataset can be found here: [Titanic: Exploratory Data Analysis with Python Pandas](https://github.com/pangkahhwee/Data-Science/blob/09fb04dea0764ced3fc80ebe0a9b68e480891a98/Image/Dataset/titanic.csv)
 
 <a id="ch5"></a>
 # Step 3: Data Preperation
