@@ -50,6 +50,8 @@ Certain groups of passengers appeared to have a higher likelihood of survival th
 
 The dataset can be found here: [Titanic: Exploratory Data Analysis with Python Pandas](https://github.com/pangkahhwee/Data-Science/blob/09fb04dea0764ced3fc80ebe0a9b68e480891a98/Image/Dataset/titanic.csv)
 
+![Downloading_data.jpg](/Image/Titanic/titanic1.PNG) 
+
 <a id="ch5"></a>
 # Step 3: Data Preperation
 The data was downloaded into my Github, so I only focused on cleaning it up and use it for my Data Science.
@@ -137,8 +139,10 @@ check_output: Executes shell commands from Python
 
 This setup is typical for Kaggle competitions or exploratory data analysis projects where many ML algorithms available to experiment with.
 
-## 3.2 Pre-view of the Data
-The survived variable serves as the outcome (or dependent) variable, coded as 1 if the passenger survived and 0 if they did not. All other variables are independent (predictor) variables. While most variable names are self-explanatory, two merit clarification: SibSp denotes the number of siblings or spouses aboard the Titanic and Parch indicates the number of parents or children aboard the vessel.
+## 3.2 Preview of the Data
+I have displayed the first 5 and last 5 rows of the DataFrame here. Also, the survived variable serves as the outcome (or dependent) variable, coded as 1 if the passenger survived and 0 if they did not. All other variables are independent (predictor) variables. While most variable names are self-explanatory, two merit clarification: SibSp denotes the number of siblings or spouses aboard the Titanic and Parch indicates the number of parents or children aboard the vessel.
+
+![Downloading_data.jpg](/Image/Titanic/titanic3.PNG) 
 
 ![pre-view_dataframe.jpg](/images/titanic/titanic1.jpg)
 
