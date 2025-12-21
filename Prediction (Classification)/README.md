@@ -16,7 +16,7 @@ I am performing exploratory data analysis (EDA) on the Titanic dataset using Pan
 # Project Overview
 In this project, I selected a widely used classification task with binary outcomes: either 0 or 1 where an event either occurs or does not. Examples include whether it will rain tomorrow or whether a production component is functioning or not.
 
-I worked with a project based on my interest after watching a movie, Titanic: Exploratory Data Analysis with Python Pandas. I concentrated on predicting passenger survival outcomes by following a structured workflow: defining the problem, collecting, cleaning and preparing the data, performing exploratory data analysis, building a model, validating its performance and further optimizing it.
+I worked with a project based on my interest after watching a movie, Titanic: Exploratory Data Analysis with Pandas, Matplotlib and Seaborn. I am concentrating on predicting passenger survival outcomes by following a structured workflow: defining the problem, collecting, cleaning and preparing the data, performing exploratory data analysis, building a model, validating its performance and further optimizing it.
 
 Let's take a look at the steps:
 
