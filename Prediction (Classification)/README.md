@@ -53,7 +53,7 @@ The dataset can be found here: [Titanic: Exploratory Data Analysis with Python P
 
 <a id="ch5"></a>
 # Step 3: Data Preperation
-The data was downloaded into my Github, so I only focused on cleaning it up further.
+The data was downloaded into my Github, so I only focused on cleaning it up and use it for my Data Science.
 
 ## 3.1 Import Libraries
 
@@ -86,10 +86,55 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.pylab as pylab
 import seaborn as sns
-from pandas.tools.plotting import scatter_matrix
+from pandas.plotting import scatter_matrix
 ```
 
-**This is the input data from Kaggle :**  ['gender_submission.csv', 'test.csv', 'train.csv']
+**The input data ** 
+Core Libraries
+
+sys: Accesses system-specific parameters and functions.
+
+pandas (pd): Handles data manipulation and analysis using DataFrames.
+
+numpy (np): Supports numerical computations with arrays and matrices.
+
+scipy (sp): Provides scientific computing tools such as statistics and optimization.
+
+matplotlib: Used for creating plots and visualizations.
+
+IPython: Enhances interactive Python environments, commonly used in Jupyter notebooks.
+
+Machine Learning (scikit-learn / sklearn)
+
+The code leverages various scikit-learn tools and algorithms:
+
+Classifiers: Support vector machines, decision trees, linear models, k-nearest neighbors, naive Bayes, ensemble methods (e.g., Random Forest), discriminant analysis, and Gaussian processes.
+
+XGBoost: A separate library for gradient boosting.
+
+Preprocessing: Includes OneHotEncoder for converting categorical features to binary format and LabelEncoder for converting labels to numerical values.
+
+Feature Selection: Tools to determine the most important features.
+
+Model Selection: Utilities for cross-validation and hyperparameter tuning.
+
+Metrics: Functions to evaluate model performance (accuracy, precision, recall, etc.).
+
+Visualization
+
+matplotlib / pyplot / pylab: For creating various plots and charts.
+
+seaborn (sns): Simplifies statistical data visualization with visually appealing defaults.
+
+scatter_matrix: Generates a matrix of scatter plots for multiple variables.
+
+Utilities
+
+random and time: Generate random numbers and measure execution time.
+
+check_output: Allows executing shell commands from within Python.
+
+
 
 ## 3.2 Pre-view of the Data
 The *Survived* variable is the outcome or dependent variable. The datatype is 1 if the person survived and 0 if they did not survive. The rest of the variables are independent variables. Most variable names are self explanatory but a couple may be worth mentioning. The *SibSp* represents the number of siblings / spouses aboard the Titanic and *Parch* represents the number of parents / children aboard the Titanic.
