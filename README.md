@@ -4,7 +4,7 @@
 
 This repository holds the below projects. Currently they're binned in five different categories.
 
-1. [Prediction (Classification)](https://github.com/pangkahhwee/Data-Science/blob/353031b9ff7150f5e8529fae954831c4e8f95689/Prediction%20(Classification)/README.md)
+1. [Prediction (Classification)](https://github.com/pangkahhwee/Data-Science/blob/main/Prediction(Classification)/README.md)
 2. [EDA (Exploratory Data Analysis)](https://github.com/pangkahhwee/Data-Science/blob/main/Exploratory%20Data%20Analysis(EDA)/README.md)
 3. [Prediction (Regression)]
 4. [Cluster Analysis (Unclassified Data)]
