@@ -142,14 +142,14 @@ I have displayed the first 5 and last 5 rows of the DataFrame here to validate t
 ## 3.3 Data Pre-processing: 
 I performed data cleaning by removing anomalies and outliers, imputing missing values where appropriate, enhancing features and carrying out necessary data transformations. 
 
-
+![Downloading_data.jpg](/Image/Titanic/titanic4.PNG) 
 
 <a id="ch6"></a>
 ## Step 4: Explanatory Data Analysis (EDA)
 
 Following data cleaning and organization, I conducted exploratory data analysis (EDA) to examine the dataset, using visualizations to gain a deeper understanding of its characteristics, underlying patterns and statistical properties.
 
-
+![Downloading_data.jpg](/Image/Titanic/titanic5.PNG) 
 
 Identify the number of passengers in each individual passenger class:
 
