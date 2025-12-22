@@ -93,14 +93,6 @@ seaborn (sns): Statistical data visualization with attractive defaults
 
 scatter_matrix: Creates a grid of scatter plots for multiple variables
 
-This setup is typical for Kaggle competitions or exploratory data analysis projects where you want many ML algorithms available to experiment with.
-
-## Utilities
-
-random and time: Random number generation and timing operations
-check_output: Executes shell commands from Python
-
-This setup is typical for Kaggle competitions or exploratory data analysis projects where many ML algorithms available to experiment with.
 
 ## 3.2 Preview of the Data
 I have displayed the first 5 and last 5 rows of the DataFrame here to validate that I had download the corrct dataset. Also, the survived variable serves as the outcome (or dependent) variable, coded as 1 if the passenger survived and 0 if they did not. All other variables are independent (predictor) variables. While most variable names are self-explanatory, two merit clarification: SibSp denotes the number of siblings or spouses aboard the Titanic and Parch indicates the number of parents or children aboard the vessel.
