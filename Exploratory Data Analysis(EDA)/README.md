@@ -3,13 +3,14 @@
 I am performing exploratory data analysis (EDA) on the Titanic dataset using Pandas. This dataset contains detailed information about the passengers aboard the Titanic, including demographic attributes and their survival status. The primary objective of my analysis is to uncover meaningful insights into the characteristics and patterns of the passengers, helping to better understand factors that may have influenced their chances of survival. 
 
 ## Table of Contents
-1. [Chapter 1 - Project Overview](#ch1)
-1. [Chapter 2 - Data Science Steps](#ch2)
-1. [Chapter 3 - Step 1: Problem Definition](#ch3)
-1. [Chapter 4 - Step 2: Data Gathering](#ch4)
-1. [Chapter 5 - Step 3: Data Preparation](#ch5)
-1. [Chapter 6 - Step 4: Explanatory Data Analysis (EDA)](#ch6)
-1. [Chapter 13 - Conclusion](#ch7)
+1. [Step 1 - Project Overview](#ch1)
+1. [Step 2 - Data Science Steps](#ch2)
+1. [Step 3 - Step 1: Problem Definition](#ch3)
+1. [Step 4 - Step 2: Data Gathering](#ch4)
+1. [Step 5 - Step 3: Data Preparation](#ch5)
+1. [Step 6 - Step 4: Explanatory Data Analysis (EDA)](#ch6)
+1. [Step 7 - Data Visualisation using Pandas, Matplotlib and Seaborn](#ch7)
+1. [Step 8 - Conclusion](#ch8)
 
 
 <a id="ch1"></a>
@@ -34,7 +35,7 @@ Let's take a look at the steps:
 ## Step 1: Problem Definition
 The objective of this project is to predict the number of passengers on the Titanic survived when the sinking disaster striked.
 
-**Project Summary**
+## Project Summary
 The Titanic disaster is one of the most well-known maritime tragedies in history. On April 15, 1912, the RMS Titanic sank after striking an iceberg. Although it was widely believed to be unsinkable, the ship was lost due to the collision. With insufficient lifeboats on board, 1,502 out of the 2,224 passengers and crew members lost their lives.
 
 Certain groups of passengers appeared to have a higher likelihood of survival than others, though luck also played a role. In this challenge, the objective is to develop a predictive model that determines an individual’s probability of survival based on passenger data such as name, age, gender, social class and other relevant attributes.
@@ -171,6 +172,40 @@ Identify and display the passenger with the highest 'Fare':
 ![Idata_characteristics.jpg](/Image/Titanic/titanic9.PNG) 
 
 <a id="ch7"></a>
+## Step 7 - Data Visualisation using Pandas, Matplotlib and Seaborn
+### 7.1 Visualize passenger survival rate
+I created a bar plot using seaborn to display the count of survivors and non-survivors.
+
+![Idata_characteristics.jpg](/Image/Titanic/titanic10.PNG) 
+
+Interpretation:
+1.   0 = Not survived
+2.   1 = Survived
+
+There are lesser passengers who survived in this disaster.
+
+### 7.2 Visualize passenger survival rate
+
+![Idata_characteristics.jpg](/Image/Titanic/titanic11.PNG) 
+
+### 7.3: Analyze Passenger Age Distribution
+
+I constructed a histogram using matplotlib to show the distribution of passenger ages.
+
+![Idata_characteristics.jpg](/Image/Titanic/titanic12.PNG) 
+
+### 7.4: Visualize Passenger Class and Age
+
+Build a scatter plot using matplotlib to show the relationship between passenger age and class.
+
+![Idata_characteristics.jpg](/Image/Titanic/titanic13.PNG) 
+
+Intrepretation:
+1.   Elderly are mostly in 1st class.
+2.   Most younger age groups are in the 3rd class.
+3.   Younger and middle age group spread across all classes.
+
+<a id="ch8"></a>
 ## Conclusion
 
 The ananlysis of the Titanic dataset reveals clear differences in survival rates across passenger classes. First class passengers had the highest survival rate (=63%), followed by second-class (=47%), while third-class passengers had the lowest survival rate(=24%). This suggests that socio-economic status played a significant role in survival chances.
