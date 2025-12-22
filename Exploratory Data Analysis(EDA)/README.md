@@ -5,10 +5,10 @@ I am performing exploratory data analysis (EDA) on the Titanic dataset using Pan
 ## Table of Contents
 1. [Step 1 - Project Overview](#ch1)
 1. [Step 2 - Data Science Steps](#ch2)
-1. [Step 3 - Step 1: Problem Definition](#ch3)
-1. [Step 4 - Step 2: Data Gathering](#ch4)
-1. [Step 5 - Step 3: Data Preparation](#ch5)
-1. [Step 6 - Step 4: Explanatory Data Analysis (EDA)](#ch6)
+1. [Step 3 - Problem Definition](#ch3)
+1. [Step 4 - Data Gathering](#ch4)
+1. [Step 5 - Data Preparation](#ch5)
+1. [Step 6 - Explanatory Data Analysis (EDA)](#ch6)
 1. [Step 7 - Data Visualisation using Pandas, Matplotlib and Seaborn](#ch7)
 1. [Step 8 - Conclusion](#ch8)
 
@@ -64,22 +64,6 @@ import matplotlib
 import numpy as np 
 import scipy as sp 
 
-import IPython
-import sklearn 
-
-import random
-import time
-
-from subprocess import check_output
-
-from sklearn import svm, tree, linear_model, neighbors, naive_bayes, ensemble, discriminant_analysis, gaussian_process
-from xgboost import XGBClassifier
-
-from sklearn.preprocessing import OneHotEncoder, LabelEncoder
-from sklearn import feature_selection
-from sklearn import model_selection
-from sklearn import metrics
-
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import matplotlib.pylab as pylab
@@ -101,21 +85,7 @@ IPython: Enhanced interactive Python (typically used in Jupyter notebooks)
 
 sys: System-specific pparameters and functions
 
-## Machine Learning (sklearn) 
 
-The code imports a wide range of scikit-learn algorithms:
-
-Classifiers: SVM, decision trees, linear models, k-nearest neighbors, naive Bayes, ensemble methods (like Random Forest), discriminant analysis, and Gaussian processes
-
-XGBoost: A powerful gradient boosting library (imported separately)
-
-Preprocessing: OneHotEncoder (converts categorical variables to binary columns) and LabelEncoder (converts labels to numbers)
-
-Feature selection: Tools to identify the most important features
-
-Model selection: Cross-validation and hyperparameter tuning utilities
-
-Metrics: Performance evaluation (accuracy, precision, recall, etc.)
 
 ## Visualization
 
@@ -139,7 +109,6 @@ I have displayed the first 5 and last 5 rows of the DataFrame here to validate t
 
 ![Downloading_data.jpg](/Image/Titanic/titanic3.PNG) 
 
-<a id="ch5"></a>
 ## 3.3 Data Pre-processing: 
 I performed data cleaning by removing anomalies and outliers, imputing missing values where appropriate, enhancing features and carrying out necessary data transformations. 
 
@@ -178,7 +147,7 @@ I created a bar plot using seaborn to display the count of survivors and non-sur
 
 ![Idata_characteristics.jpg](/Image/Titanic/titanic10.PNG) 
 
-Interpretation:
+My interpretation:
 1.   0 = Not survived
 2.   1 = Survived
 
@@ -196,11 +165,11 @@ I constructed a histogram using matplotlib to show the distribution of passenger
 
 ### 7.4: Visualize Passenger Class and Age
 
-Build a scatter plot using matplotlib to show the relationship between passenger age and class.
+I built a scatter plot using matplotlib to show the relationship between passenger age and class.
 
 ![Idata_characteristics.jpg](/Image/Titanic/titanic13.PNG) 
 
-Intrepretation:
+My intrepretation:
 1.   Elderly are mostly in 1st class.
 2.   Most younger age groups are in the 3rd class.
 3.   Younger and middle age group spread across all classes.
