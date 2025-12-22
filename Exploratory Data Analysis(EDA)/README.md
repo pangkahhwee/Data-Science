@@ -1,6 +1,6 @@
 ![titanic.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Titanic/titanic1.jpg.png?raw=true)
 
-I am performing exploratory data analysis (EDA) on the Titanic dataset using Pandas. This dataset contains detailed information about the passengers aboard the Titanic, including demographic attributes and their survival status. The primary objective of my analysis is to uncover meaningful insights into the characteristics and patterns of the passengers, helping to better understand factors that may have influenced their chances of survival. 
+I am performing exploratory data analysis (EDA) on the Titanic dataset using Pandas, Matplotlib and Seaborn. This dataset contains detailed information about the passengers aboard the Titanic, including demographic attributes and their survival status. The primary objective of my analysis is to uncover meaningful insights into the characteristics and patterns of the passengers, helping to better understand factors that may have influenced their chances of survival. 
 
 ## Table of Contents
 1. [Step 1 - Project Overview](#ch1)
@@ -15,8 +15,6 @@ I am performing exploratory data analysis (EDA) on the Titanic dataset using Pan
 
 <a id="ch1"></a>
 # Project Overview
-In this project, I selected a widely used classification task with binary outcomes: either 0 or 1 where an event either occurs or does not. Examples include whether it will rain tomorrow or whether a production component is functioning or not.
-
 I worked with a project based on my interest after watching a movie, Titanic: Exploratory Data Analysis with Pandas, Matplotlib and Seaborn. I am concentrating on predicting passenger survival outcomes by following a structured workflow: defining the problem, collecting, cleaning and preparing the data, performing exploratory data analysis, building a model, validating its performance and further optimizing it.
 
 Let's take a look at the steps:
@@ -27,7 +25,7 @@ Let's take a look at the steps:
 2. **Data Gathering:** I got the dataset from a website.
 3. **Data Preparation:** I cleaned the dataset by remove the duplicates and blanks or outliers.
 4. **EDA (Exploratory Data Analysis):** If poor quality data is fed into a system, the results will be equally poor. That is why it is important to apply descriptive and visual statistics to uncover patterns, relationships and comparisons within the dataset. At this stage, I will examine the data to ensure whether it is clear, consistent and meaningful.
-5. **Data Modeling:** Choosing the right model is important. If an inappropriate model is selected for a given use case, the effectiveness of all subsequent steps is compromised. 
+5. **Data Visualisations:** Pictures tell a thousand words. A good charts or graph is able to let audiences understand the whole situations easily. 
 6. **Validate Model:** I will evaluate its performance and assessed after training as whether it showed signs of overfitting or underfitting.
 7. **Optimize Model:** I improved the model by applying techniques such as hyperparameter optimization to enhance its performance.
 
