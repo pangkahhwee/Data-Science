@@ -3,14 +3,14 @@
 I am performing exploratory data analysis (EDA) on the Titanic dataset using Pandas, Matplotlib and Seaborn. This dataset contains detailed information about the passengers aboard the Titanic, including demographic attributes and their survival status. The primary objective of my analysis is to uncover meaningful insights into the characteristics and patterns of the passengers, helping to better understand factors that may have influenced their chances of survival. 
 
 ## Table of Contents
-1. [Step 1 - Project Overview](#ch1)
-1. [Step 2 - Data Science Steps](#ch2)
-1. [Step 3 - Problem Definition](#ch3)
-1. [Step 4 - Data Gathering](#ch4)
-1. [Step 5 - Data Preparation](#ch5)
-1. [Step 6 - Explanatory Data Analysis (EDA)](#ch6)
-1. [Step 7 - Data Visualisation using Pandas, Matplotlib and Seaborn](#ch7)
-1. [Step 8 - Conclusion](#ch8)
+1. [Project Overview](#ch1)
+1. [Data Science Steps](#ch2)
+1. [Problem Definition](#ch3)
+1. [Data Gathering](#ch4)
+1. [Data Preparation](#ch5)
+1. [Explanatory Data Analysis (EDA)](#ch6)
+1. [Data Visualisation using Pandas, Matplotlib and Seaborn](#ch7)
+1. [Conclusion](#ch8)
 
 
 <a id="ch1"></a>
