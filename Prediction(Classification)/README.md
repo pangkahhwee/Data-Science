@@ -45,13 +45,15 @@ The dataset can be found here: [Titanic: Exploratory Data Analysis with Python P
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid2.png)
 
+I begin by importing the required dataset from its sourcefrom the URL. Next, I load the imported data into a structured format compatible with the analysis environment— a pandas DataFrame in Python. I verify that the data has been successfully downloaded and properly formatted by inspecting its schema, dimensions and initial rows.
+
 <a id="ch5"></a>
 ## Step 3: Data Preparation
 The data was downloaded into my Github, so I only focused on cleaning it up and use it for my Data Science.
 
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid3.PNG)
 
 ## 3.1 Import Libraries
+I will begin my project with importing the libraries first.
 
 ```
 import sys 
@@ -92,42 +94,75 @@ seaborn (sns): Statistical data visualization with attractive defaults
 scatter_matrix: Creates a grid of scatter plots for multiple variables
 
 ## 3.2 Preview of the Data
-I have displayed the first 5 and last 5 rows of the DataFrame here to validate that I had download the corrct dataset. Also, the survived variable serves as the outcome (or dependent) variable, coded as 1 if the passenger survived and 0 if they did not. All other variables are independent (predictor) variables. While most variable names are self-explanatory, two merit clarification: SibSp denotes the number of siblings or spouses aboard the Titanic and Parch indicates the number of parents or children aboard the vessel.
+To gain an initial understanding of the dataset’s structure, I display the first five rows of the DataFrame using the .head() method. Similarly, I inspected the last five rows by invoking the .tail() method to observe how the data concludes.
+This dual preview helps identify patterns, anomalies or inconsistencies at both ends of the dataset.
+
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid3.PNG)
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid4.PNG)
 
 ## 3.3 Data Pre-processing: 
-I performed data cleaning by removing anomalies and outliers, imputing missing values where appropriate, enhancing features and carrying out necessary data transformations. 
+I began by identifying and removing anomalies and statistical outliers that could distort analytical outcomes, ensuring the dataset’s integrity. Where ddata gaps existed, I carefully imputed missing values using contextually appropriate strategies—such as mean substitution, forward fill or model-based imputation—depending on the nature of the variables. Additionally, I engineered new features to improve model relevance and applied essential transformations, including normalization, encoding categorical variables and scaling, to align the data with analytical requirements.
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid5.PNG)
+
+First, I calculated the proportion of missing values in each column of the DataFrame to assess data completeness.
+Next, I identified all columns where the percentage of missing values exceeds the 90% threshold as these are unlikely to contribute meaningful information. Finally, I permanently remove those columns from the DataFrame to streamline the dataset and improve computational efficiency for subsequent analysis.
+
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid6.PNG)
+
+For numerical columns, I applied suitable imputation techniques such as replacing missing entries with the mean, median or a value derived from more advanced methods like K-nearest neighbors (KNN) or regression. For categorical columns, I use the mode or introduce a new category like “Unknown” when appropriate. Finally, document the imputation approach for each feature, validate that the imputed values preserve the underlying data distribution and ensure reproducibility by encapsulating the logic in a preprocessing pipeline or function.
+
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid8.PNG)
+
+I ensure that the 'date' column exists in my DataFrame and contains values that represent dates in a recognizable format (e.g strings like '2023-12-25' or '12/25/2023'). Then, I use pandas’ pd.to_datetime() function to convert the column’s data type from its current form—often object (string) to the datetime64 data type, which enables efficient date-based operations such as sorting, filtering by time ranges and extracting components like year, month or day. This conversion also validates the date entries, automatically parsing them into a standardized temporal format and optionally handling errors (e.g. by coercing invalid dates to NaT—Not a Time—if specified), thereby enhancing both data quality and analytical capability.
+
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid7.PNG)
+
+I identifying duplicate rows in the DataFrame using the .duplicated() method, which returns a Boolean Series indicating which rows are exact duplicates of earlier ones. Next, I used the .drop_duplicates() method to remove these redundant entries, optionally specifying a subset of columns to consider if full-row duplication is not required or if duplicates should be evaluated based on key identifiers only. Finally, after verify that the operation was successful by comparing the DataFrame’s shape before and after removal, I ensured data integrity is maintained while eliminating redundancy that could otherwise bias analysis or modeling outcomes.
+
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid9.PNG)
+
+I selected the column that contains country information that typically labeled 'country' and extract all distinct country entries present in the dataset. Next, I wrote a programming(Python) to the same column to obtain a precise count of how many unique countries are represented, which provides a quantitative measure of geographic diversity. 
+
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid10.PNG)
+
+I grouped the dataset according to the 'Continent' column (which represents WHO regions) and aggregating the total number of confirmed COVID-19 cases and total deaths for each region. Next, I created two separate bar plots—one displaying the total cases and the other the total deaths per WHO region—using a visualization library such as Matplotlib or Seaborn, ensuring that each bar is clearly labeled, axes are appropriately titled and the plots are visually distinct for easy interpretation.
+Finally, analyze the resulting visualizations to identify regional disparities in pandemic impact and consider enhancing the plots with annotations, color coding or sorting by magnitude to improve clarity and communicative effectiveness.
+
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid11.PNG)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid12.PNG)
+
+
+
 
 <a id="ch6"></a>
 ## Step 4: Explanatory Data Analysis (EDA)
 
-Following data cleaning and organization, I conducted exploratory data analysis (EDA) to examine the dataset, using visualizations to gain a deeper understanding of its characteristics, underlying patterns and statistical properties.
+Following data cleaning and organization, I conducted Exploratory Data Analysis (EDA) to examine the dataset, using visualizations to gain a deeper understanding of its characteristics, underlying patterns and statistical properties.
 
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid6.PNG)
+
 
 Identify the number of passengers in each individual passenger class:
 
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid7.PNG)
+
 
 I created a new column named 'FamilySize' that represents the sum of 'SibSp' and 'Parch'.
 Drop the 'Cabin' column from the dataset:
 
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid8.PNG)
+
 
 Next, I created a new DataFrame containing only passengers with an age greater than 30.
 Sort the DataFrame by 'Fare' in descending order:
 
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid9.PNG)
+
 
 I also calculated the survival rate for different passenger classes ('Pclass').
 Identify and display the passenger with the highest 'Fare':
 
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid10.PNG)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid11.PNG)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid12.PNG)
+
+
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid13.PNG)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid14.PNG)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid15.PNG)
