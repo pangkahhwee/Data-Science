@@ -21,7 +21,7 @@ Let's take a look at the steps:
 
 <a id="ch2"></a>
 ## Data Science Steps
-1. **Problem Definition:** Addresses the critical need for clear, timely, and accurate understanding of regional trends in cases and deaths by performing a comprehensive, reproducible analysis and visualization.
+1. **Problem Definition:** Addresses the critical need for clear, timely and accurate understanding of regional trends in cases and deaths by performing a comprehensive, reproducible analysis and visualization.
 2. **Data Gathering:** I got the dataset from the website.
 3. **Data Preparation:** I cleaned the dataset by remove the duplicates and blanks or outliers.
 4. **EDA (Exploratory Data Analysis):** Poor quality data inevitably leads to poor outcomes. Therefore, it is essential to apply descriptive and visual statistical techniques to uncover patterns, relationships and meaningful comparisons within the dataset. At this stage, the data will be examined to ensure it is clear, consistent and analytically meaningful before proceeding further.
