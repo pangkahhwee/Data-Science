@@ -21,35 +21,33 @@ Let's take a look at the steps:
 
 <a id="ch2"></a>
 ## Data Science Steps
-1. **Problem Definition:** What factors influenced survival in a disaster? By analyzing passenger data, we are able to identify specific groups that had a higher likelihood of survival.
-2. **Data Gathering:** I got the dataset from a website.
+1. **Problem Definition:** Addresses the critical need for clear, timely, and accurate understanding of regional trends in cases and deaths by performing a comprehensive, reproducible analysis and visualization.
+2. **Data Gathering:** I got the dataset from the website.
 3. **Data Preparation:** I cleaned the dataset by remove the duplicates and blanks or outliers.
-4. **EDA (Exploratory Data Analysis):** If poor quality data is fed into a system, the results will be equally poor. That is why it is important to apply descriptive and visual statistics to uncover patterns, relationships and comparisons within the dataset. At this stage, I will examine the data to ensure whether it is clear, consistent and meaningful.
+4. **EDA (Exploratory Data Analysis):** Poor quality data inevitably leads to poor outcomes. Therefore, it is essential to apply descriptive and visual statistical techniques to uncover patterns, relationships and meaningful comparisons within the dataset. At this stage, the data will be examined to ensure it is clear, consistent and analytically meaningful before proceeding further.
 5. **Data Visualisations:** Pictures tell a thousand words. A good charts or graph is able to let audiences understand the whole situations easily. 
 6. **Validate Model:** I will evaluate its performance and assessed after training as whether it showed signs of overfitting or underfitting.
 7. **Optimize Model:** I improved the model by applying techniques such as hyperparameter optimization to enhance its performance.
 
 <a id="ch3"></a>
 ## Step 1: Problem Definition
-The objective of this project is to predict the number of passengers on the Titanic survived when the sinking disaster striked.
+The ongoing global impact of the COVID-19 pandemic has generated vast amounts of public health data yet transforming this data into actionable insights remains a critical challenge. Decision-makers require clear, timely and accurate understanding of trends in cases and deaths across different regions to inform policy, allocate resources and communicate risks effectively. In this context, there is a need to systematically analyze and visualize worldwide COVID-19 data to uncover patterns, monitor regional disparities and support evidence-based responses. This project seeks to address that need by performing a comprehensive, reproducible analysis of global pandemic data using Python-based data science and visualization tools.
 
 ## Project Summary
-The Titanic disaster is one of the most well-known maritime tragedies in history. On April 15, 1912, the RMS Titanic sank after striking an iceberg. Although it was widely believed to be unsinkable, the ship was lost due to the collision. With insufficient lifeboats on board, 1,502 out of the 2,224 passengers and crew members lost their lives.
-
-Certain groups of passengers appeared to have a higher likelihood of survival than others, though luck also played a role. In this challenge, the objective is to develop a predictive model that determines an individual’s probability of survival based on passenger data such as name, age, gender, social class and other relevant attributes.
+This capstone project undertakes a comprehensive analysis and visualization of global COVID-19 data to support data-driven understanding of the pandemic’s evolution across regions. Leveraging Python’s data science ecosystem including pandas for data manipulation, Matplotlib and Seaborn for visualization and Jupyter for reproducible reporting, the project processes publicly available datasets to clean, structure and analyze key metrics such as total cases and deaths by WHO region (represented as continents in the dataset). The analysis includes handling missing values, removing duplicates, standardizing geographic classifications and aggregating statistics to enable meaningful cross-regional comparisons. The resulting visualizations, primarily in the form of informative bar plots, aim to highlight disparities in pandemic impact and provide stakeholders with intuitive, actionable insights to inform public health decisions and strategic planning.
 
 <a id="ch4"></a>
 ## Step 2: Data Gathering
 
-The dataset can be found here: [Titanic: Exploratory Data Analysis with Python Pandas](https://github.com/pangkahhwee/Data-Science/blob/09fb04dea0764ced3fc80ebe0a9b68e480891a98/Image/Dataset/titanic.csv)
+The dataset can be found here: [COVID-19 dataset via Our World in Data's data catalog](https://catalog.ourworldindata.org/garden/covid/latest/compact/compact.csv)
 
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid2.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid2.PNG)
 
-I begin by importing the required dataset from its sourcefrom the URL. Next, I load the imported data into a structured format compatible with the analysis environment— a pandas DataFrame in Python. I verify that the data has been successfully downloaded and properly formatted by inspecting its schema, dimensions and initial rows.
+I begin by importing the required dataset from its source from the URL. Next, I load the imported data into a structured format compatible with the analysis environment, a pandas DataFrame in Python. I have verified that the data has been successfully downloaded and properly formatted by inspecting its schema, dimensions and initial rows.
 
 <a id="ch5"></a>
 ## Step 3: Data Preparation
-The data was downloaded into my Github, so I only focused on cleaning it up and use it for my Data Science.
+I focused on cleaning it up and use it for my Data Science.
 
 
 ## 3.1 Import Libraries
@@ -128,95 +126,66 @@ I selected the column that contains country information that typically labeled '
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid10.PNG)
 
 I grouped the dataset according to the 'Continent' column (which represents WHO regions) and aggregating the total number of confirmed COVID-19 cases and total deaths for each region. Next, I created two separate bar plots—one displaying the total cases and the other the total deaths per WHO region—using a visualization library such as Matplotlib or Seaborn, ensuring that each bar is clearly labeled, axes are appropriately titled and the plots are visually distinct for easy interpretation.
-Finally, analyze the resulting visualizations to identify regional disparities in pandemic impact and consider enhancing the plots with annotations, color coding or sorting by magnitude to improve clarity and communicative effectiveness.
+Finally, I analyze the resulting visualizations to identify regional disparities in pandemic impact and consider enhancing the plots with annotations, color coding or sorting by magnitude to improve clarity and communicative effectiveness.
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid11.PNG)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid12.PNG)
 
 
-
-
-<a id="ch6"></a>
-## Step 4: Explanatory Data Analysis (EDA)
-
-Following data cleaning and organization, I conducted Exploratory Data Analysis (EDA) to examine the dataset, using visualizations to gain a deeper understanding of its characteristics, underlying patterns and statistical properties.
-
-
-
-Identify the number of passengers in each individual passenger class:
-
-
-
-I created a new column named 'FamilySize' that represents the sum of 'SibSp' and 'Parch'.
-Drop the 'Cabin' column from the dataset:
-
-
-
-Next, I created a new DataFrame containing only passengers with an age greater than 30.
-Sort the DataFrame by 'Fare' in descending order:
-
-
-
-I also calculated the survival rate for different passenger classes ('Pclass').
-Identify and display the passenger with the highest 'Fare':
-
-
-
+I aggregating the global COVID-19 case data on a monthly basis by summing or otherwise consolidating daily case counts into total or average monthly figures—to capture temporal patterns over time. I will then use a line plot, created with a visualization library such as Matplotlib or Seaborn in Python, to graphically represent these monthly case totals across the entire pandemic period with time (e.g month-year) on the x-axis and the number of cases on the y-axis. I enhance the plot with appropriate labels, a descriptive title, gridlines for readability and potentially annotations for significant events (e.g variant surges or policy changes) to facilitate clear interpretation of global trends and inform public health insights.
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid13.PNG)
+
+I selected the relevant numerical columns, typically 'total_cases' and 'total_deaths' from the dataset and ensuring they are properly cleaned and formatted to avoid distortions in correlation measurement. I then compute the correlation coefficient between these two variables using pandas’ .corr() method, which quantifies the strength and direction of their linear relationship. Finally, I visualize this correlation using a heatmap—generated via Seaborn’s heatmap() function where the intensity of the color (e.g from cool to warm tones) reflects the magnitude of the correlation, accompanied by clear axis labels and an annotated correlation value to enhance interpretability and support evidence-based conclusions about the association between infections and fatalities.
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid14.PNG)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid15.PNG)
+
+I preprocessed the dataset to ensure the date column is in datetime format, then I extracted the month (and optionally year) and combine it with the continent (or WHO region) column to create a structured grouping key. I summing or averaging the 'new_cases' for each unique combination of continent and month, resulting in a pivot-style summary that captures monthly case trends across regions. Then I generate a grouped (or clustered) bar chart—using a library such as Matplotlib or Seaborn—where each cluster represents a month and within each cluster, individual bars correspond to continents, enabling clear visual comparison of new case distributions over time and geography to enhance the chart with appropriate labels, a legend, and a descriptive title for clarity and impact.
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid16.PNG)
+
+Extracting the year from the date column in the dataset—ensuring the column is in datetime format—and then group or assign each record to its corresponding calendar year. Next, I constructed a box plot (also known as a box-and-whisker plot) using a visualization library such as Matplotlib or Seaborn, with the x-axis representing each year and the y-axis showing the distribution of total COVID-19 cases; this plot will illustrate the median, interquartile range, potential outliers and overall spread of case counts for each year.
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid17.PNG)
+
+Aggregating the dataset to compute the sum of total deaths for each continent (or WHO region), ensuring that the continent column is consistently labeled and any missing or ambiguous entries are resolved. I created a bar plot using a visualization library such as Matplotlib or Seaborn, where the x-axis lists the continents and the y-axis represents the cumulative number of deaths, with each bar’s height reflecting the total mortality burden in that region. I enhanced the plot with clear axis labels, a descriptive title, value annotations on top of each bar (if space permits) and a consistent color scheme to enable straightforward visual comparison and effective communication of intercontinental disparities in pandemic-related fatalities.
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid18.PNG)
+
+The dataset contains a properly formatted date column, then extract the month (if applicable, the year) to create a time-based grouping key for aggregation. Sum the 'total_cases' or 'new_cases' (depending on data structure) for each unique month to obtain monthly case totals, which will serve as the basis for temporal trend analysis. Visualize these aggregated monthly case counts using a bar plot—implemented with Matplotlib, Seaborn or a similar library where the x-axis represents the months (e.g "Jan 2020", "Feb 2020" etc.) and the y-axis shows the number of cases with bars ordered chronologically to clearly reveal patterns, peaks, and declines in case incidence over time.
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid19.PNG)
+
+My interpretation: This plot shows seasonal or wave patterns, if January or October show peaks, it may reflect winter waves or Delta/Omicron surges that repeatedly occurred in those months across years.
+
+I ensure that the dataset contains daily records of new COVID-19 cases and deaths with a properly formatted date column in datetime type to enable chronological sorting and alignment. Next, I aggregated the data at the global level by summing new cases and new deaths for each unique date, resulting in two time series that reflect worldwide daily incidence and mortality.
+Finally, I created a dual line plots either overlaid in a single chart with dual y-axes or presented in aligned subplots using library such as Matplotlib or Seaborn, where the x-axis represents time (date) and the y-axes represent the counts of new cases and new deaths, respectively. This enhance the plots with clear labels, a descriptive title, gridlines and smoothing (if appropriate) to reveal trends, surges and correlations in the global pandemic trajectory.
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid20.PNG)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid21.PNG)
+
+I identifying and extracting the relevant columns from the dataset that capture vaccination metrics such as total vaccinations, people fully vaccinated or vaccination rates alongside a properly formatted date column to track changes over time. Next, I aggregated the data at the global level by summing or averaging vaccination figures for each date, ensuring consistent handling of missing values and adjustments for population size if analyzing coverage rates rather than raw counts.
+Finally, I visualize the resulting time series using a line plot (or stacked area chart for multiple vaccine metrics), with time on the x-axis and vaccination coverage on the y-axis and enhance the plot with clear labeling, annotations for major milestones (e.g vaccine rollout phases or policy changes) and contextual references to effectively illustrate the pace, scale and progression of global vaccination efforts throughout the pandemic.
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid22.PNG)
+
+I identified the relevant columns in the dataset that record daily or cumulative figures for total tests conducted and the number of positive cases, ensuring the date column is in proper datetime format to enable chronological analysis.I aggregated these metrics at the global level for each time point by computing the total number of tests administered worldwide per day or cumulative total and deriving the daily or rolling positive rate as the ratio of new positive cases to new tests (typically expressed as a percentage). Finally, I visualize both trends over time using dual-axis line plots or synchronized subplots: one showing the volume of testing and the other displaying the positivity rate, with clear annotations, axis labels and potentially smoothing techniques to highlight key patterns such as testing capacity expansion, surges in transmission or shifts in pandemic response strategy on a global scale.
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid23.PNG)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid24.PNG)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid25.PNG)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid26.PNG)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid27.PNG)
+
+I begin by ensuring the dataset contains daily or cumulative records of global total cases and total deaths, with a properly formatted date column to track changes over time. Next, I computed the fatality rate for each time point by dividing the cumulative number of deaths by the cumulative number of confirmed cases (commonly expressed as a percentage), taking care to handle division by zero or periods of very low case counts to avoid spurious spikes; optionally apply a rolling average to smooth short-term volatility and reveal underlying trends. Then I visualize the resulting time series using a line plot—created with time (date) on the x-axis and the fatality rate (%) on the y-axis, enhanced with a clear title, axis labels, gridlines and contextual annotations (e.g emergence of variants or changes in testing policy) to effectively communicate how the global risk of death among confirmed cases has evolved throughout the pandemic.
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid28.PNG)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid29.PNG)
-
-<a id="ch7"></a>
-## Step 7 - Data Visualisation using Pandas, Matplotlib and Seaborn
-### 7.1 Visualize passenger survival rate
-I created a bar plot using seaborn to display the count of survivors and non-survivors.
-
-![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid11.png)
-
-My interpretation:
-1.   0 = Not survived
-2.   1 = Survived
-
-There are lesser passengers who survived in this disaster.
-
-### 7.2 Visualize passenger survival rate
-
-
-### 7.3: Analyze Passenger Age Distribution
-
-I constructed a histogram using matplotlib to show the distribution of passenger ages.
-
-![Idata_characteristics.jpg](/Image/Titanic/titanic12.PNG) 
-
-### 7.4: Visualize Passenger Class and Age
-
-I built a scatter plot using matplotlib to show the relationship between passenger age and class.
-
-![Idata_characteristics.jpg](/Image/Titanic/titanic13.PNG) 
-
-My intrepretation:
-1.   Elderly are mostly in 1st class.
-2.   Most younger age groups are in the 3rd class.
-3.   Younger and middle age group spread across all classes.
 
 <a id="ch8"></a>
-## Conclusion
 
-The ananlysis of the Titanic dataset reveals clear differences in survival rates across passenger classes. First class passengers had the highest survival rate (=63%), followed by second-class (=47%), while third-class passengers had the lowest survival rate(=24%). This suggests that socio-economic status played a significant role in survival chances.
-Additionally, the passengers with the highest fare (512.33) was Ward, Miss Anna, a 3 years old female travelling inn first class, who survived.This highlights the association between higher ticket cost, travel class and increased livelihood  of survival. 
+##Conclusion
+
+This capstone project successfully leveraged Python based data science tools primarily Pandas, Matplotlib and Seaborn to conduct a comprehensive, end-to-end analysis of global COVID-19 data sourced from Our World in Data. Through systematic data cleaning, feature engineering and exploratory data analysis, key insights were uncovered regarding the pandemic’s evolution across time, geography and public health indicators.
+
+The visualizations revealed significant regional disparities: while Asia reported the highest total cases, Europe and the Americas experienced the greatest mortality burden. Temporal analyses highlighted major infection waves, particularly the Omicron surge in early 2022 and demonstrated a global trend toward stabilization and endemicity by 2023–2024. Derived metrics such as fatality and positivity rates illustrated how improved testing, vaccination coverage and clinical management reduced lethality over time, even as case numbers fluctuated.
+
+Furthermore, correlation analyses between health system factors (e.g hospital beds, smoking rates) and outcomes showed limited direct relationships, underscoring the complex interplay of demographic, socioeconomic and policy-driven variables in pandemic impact. Interactive elements such as user-driven country and metric selection, enhanced the project’s utility for tailored exploration.
+
+Overall, this project not only fulfilled the learning objectives of using Data Science to demonstrating proficiency in data manipulation, statistical exploration and data storytelling but also delivered actionable, visually compelling insights that reflect the dynamic global response to one of the most significant public health crises of the 21st century.
+
 
