@@ -140,7 +140,7 @@ I selected the relevant numerical columns, typically 'total_cases' and 'total_de
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid14.PNG)
 
-I preprocessed the dataset to ensure the date column is in datetime format, then I extracted the month (and optionally year) and combine it with the continent (or WHO region) column to create a structured grouping key. I summing or averaging the 'new_cases' for each unique combination of continent and month, resulting in a pivot-style summary that captures monthly case trends across regions. Then I generate a grouped (or clustered) bar chart—using a library such as Matplotlib or Seaborn—where each cluster represents a month and within each cluster, individual bars correspond to continents, enabling clear visual comparison of new case distributions over time and geography to enhance the chart with appropriate labels, a legend, and a descriptive title for clarity and impact.
+I preprocessed the dataset to ensure the date column is in datetime format, then I extracted the month (and optionally year) and combine it with the continent (or WHO region) column to create a structured grouping key. I sum or averaging the 'new_cases' for each unique combination of continent and month, resulting in a pivot-style summary that captures monthly case trends across regions. Then I generate a grouped (or clustered) bar chart—using a library such as Matplotlib or Seaborn where each cluster represents a month and within each cluster, individual bars correspond to continents, enabling clear visual comparison of new case distributions over time and geography to enhance the chart with appropriate labels, a legend, and a descriptive title for clarity and impact.
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid16.PNG)
 
@@ -172,13 +172,13 @@ I identified the relevant columns in the dataset that record daily or cumulative
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid23.PNG)
 
-I begin by ensuring the dataset contains daily or cumulative records of global total cases and total deaths, with a properly formatted date column to track changes over time. Next, I computed the fatality rate for each time point by dividing the cumulative number of deaths by the cumulative number of confirmed cases (commonly expressed as a percentage), taking care to handle division by zero or periods of very low case counts to avoid spurious spikes; optionally apply a rolling average to smooth short-term volatility and reveal underlying trends. Then I visualize the resulting time series using a line plot—created with time (date) on the x-axis and the fatality rate (%) on the y-axis, enhanced with a clear title, axis labels, gridlines and contextual annotations (e.g emergence of variants or changes in testing policy) to effectively communicate how the global risk of death among confirmed cases has evolved throughout the pandemic.
+I begin by ensuring the dataset contains daily or cumulative records of global total cases and total deaths, with a properly formatted date column to track changes over time. Next, I computed the fatality rate for each time point by dividing the cumulative number of deaths by the cumulative number of confirmed cases (commonly expressed as a percentage), taking care to handle division by zero or periods of very low case counts to avoid spurious spikes; optionally apply a rolling average to smooth short-term volatility and reveal underlying trends. Then I visualize the resulting time series using a line plot created with time (date) on the x-axis and the fatality rate (%) on the y-axis, enhanced with a clear title, axis labels, gridlines and contextual annotations (e.g emergence of variants or changes in testing policy) to effectively communicate how the global risk of death among confirmed cases has evolved throughout the pandemic.
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid28.PNG)
 
 <a id="ch8"></a>
 
-##Conclusion
+## Conclusion
 
 This capstone project successfully leveraged Python based data science tools primarily Pandas, Matplotlib and Seaborn to conduct a comprehensive, end-to-end analysis of global COVID-19 data sourced from Our World in Data. Through systematic data cleaning, feature engineering and exploratory data analysis, key insights were uncovered regarding the pandemic’s evolution across time, geography and public health indicators.
 
