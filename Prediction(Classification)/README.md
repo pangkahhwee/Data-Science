@@ -43,13 +43,13 @@ Certain groups of passengers appeared to have a higher likelihood of survival th
 
 The dataset can be found here: [Titanic: Exploratory Data Analysis with Python Pandas](https://github.com/pangkahhwee/Data-Science/blob/09fb04dea0764ced3fc80ebe0a9b68e480891a98/Image/Dataset/titanic.csv)
 
-![Downloading_data.jpg](/Image/Titanic/titanic1.PNG) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid2.png)
 
 <a id="ch5"></a>
 ## Step 3: Data Preperation
 The data was downloaded into my Github, so I only focused on cleaning it up and use it for my Data Science.
 
-![Downloading_data.jpg](/Image/Titanic/titanic2.png) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid3.png)
 
 ## 3.1 Import Libraries
 
@@ -79,8 +79,6 @@ scipy (sp): Scientific computing (statistics, optimization, etc.)
 
 matplotlib: Data visualization and plotting
 
-IPython: Enhanced interactive Python (typically used in Jupyter notebooks)
-
 sys: System-specific pparameters and functions
 
 
@@ -93,57 +91,67 @@ seaborn (sns): Statistical data visualization with attractive defaults
 
 scatter_matrix: Creates a grid of scatter plots for multiple variables
 
-This setup is typical for Kaggle competitions or exploratory data analysis projects where you want many ML algorithms available to experiment with.
-
-## Utilities
-
-random and time: Random number generation and timing operations
-check_output: Executes shell commands from Python
-
-This setup is typical for Kaggle competitions or exploratory data analysis projects where many ML algorithms available to experiment with.
-
 ## 3.2 Preview of the Data
 I have displayed the first 5 and last 5 rows of the DataFrame here to validate that I had download the corrct dataset. Also, the survived variable serves as the outcome (or dependent) variable, coded as 1 if the passenger survived and 0 if they did not. All other variables are independent (predictor) variables. While most variable names are self-explanatory, two merit clarification: SibSp denotes the number of siblings or spouses aboard the Titanic and Parch indicates the number of parents or children aboard the vessel.
 
-![Downloading_data.jpg](/Image/Titanic/titanic3.PNG) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid4.png)
 
 ## 3.3 Data Pre-processing: 
 I performed data cleaning by removing anomalies and outliers, imputing missing values where appropriate, enhancing features and carrying out necessary data transformations. 
 
-![Downloading_data.jpg](/Image/Titanic/titanic4.PNG) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid5.png)
 
 <a id="ch6"></a>
 ## Step 4: Explanatory Data Analysis (EDA)
 
 Following data cleaning and organization, I conducted exploratory data analysis (EDA) to examine the dataset, using visualizations to gain a deeper understanding of its characteristics, underlying patterns and statistical properties.
 
-![Downloading_data.jpg](/Image/Titanic/titanic5.PNG) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid6.png)
 
 Identify the number of passengers in each individual passenger class:
 
-![Number_of_passengers.jpg](/Image/Titanic/titanic6.PNG) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid7.png)
 
 I created a new column named 'FamilySize' that represents the sum of 'SibSp' and 'Parch'.
 Drop the 'Cabin' column from the dataset:
 
-![Idata_characteristics.jpg](/Image/Titanic/titanic7.PNG) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid8.png)
 
 Next, I created a new DataFrame containing only passengers with an age greater than 30.
 Sort the DataFrame by 'Fare' in descending order:
 
-![Idata_characteristics.jpg](/Image/Titanic/titanic8.PNG) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid9.png)
 
 I also calculated the survival rate for different passenger classes ('Pclass').
 Identify and display the passenger with the highest 'Fare':
 
-![Idata_characteristics.jpg](/Image/Titanic/titanic9.PNG) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid10.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid11.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid12.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid13.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid14.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid15.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid16.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid17.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid18.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid19.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid20.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid21.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid22.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid23.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid24.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid25.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid26.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid27.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid28.png)
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid29.png)
 
 <a id="ch7"></a>
 ## Step 7 - Data Visualisation using Pandas, Matplotlib and Seaborn
 ### 7.1 Visualize passenger survival rate
 I created a bar plot using seaborn to display the count of survivors and non-survivors.
 
-![Idata_characteristics.jpg](/Image/Titanic/titanic10.PNG) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid11.png)
 
 My interpretation:
 1.   0 = Not survived
@@ -153,7 +161,6 @@ There are lesser passengers who survived in this disaster.
 
 ### 7.2 Visualize passenger survival rate
 
-![Idata_characteristics.jpg](/Image/Titanic/titanic11.PNG) 
 
 ### 7.3: Analyze Passenger Age Distribution
 
