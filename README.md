@@ -2,7 +2,7 @@
 
 ## Index
 
-This repository holds the below projects. Currently they're binned in five different categories.
+This repository holds the below projects:
 
 1. [EDA (Exploratory Data Analysis)](https://github.com/pangkahhwee/Data-Science/blob/main/Exploratory%20Data%20Analysis(EDA)/README.md)
 2. [Prediction (Classification)](https://github.com/pangkahhwee/Data-Science/blob/main/Prediction(Classification)/README.md) 
