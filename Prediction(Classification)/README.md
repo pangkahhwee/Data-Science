@@ -99,7 +99,7 @@ This dual preview helps identify patterns, anomalies or inconsistencies at both 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid4.PNG)
 
 ## Data Pre-processing: 
-I began by identifying and removing anomalies and statistical outliers that could distort analytical outcomes, ensuring the dataset’s integrity. Where ddata gaps existed, I carefully imputed missing values using contextually appropriate strategies—such as mean substitution, forward fill or model-based imputation—depending on the nature of the variables. Additionally, I engineered new features to improve model relevance and applied essential transformations, including normalization, encoding categorical variables and scaling, to align the data with analytical requirements.
+I began by identifying and removing anomalies and statistical outliers that could distort analytical outcomes, ensuring the dataset’s integrity. Where ddata gaps existed, I carefully imputed missing values using contextually appropriate strategies such as mean substitution, forward fill or model-based imputation depending on the nature of the variables. Additionally, I engineered new features to improve model relevance and applied essential transformations, including normalization, encoding categorical variables and scaling, to align the data with analytical requirements.
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid5.PNG)
 
@@ -146,7 +146,7 @@ I preprocessed the dataset to ensure the date column is in datetime format, then
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid16.PNG)
 
-Extracting the year from the date column in the dataset—ensuring the column is in datetime format—and then group or assign each record to its corresponding calendar year. Next, I constructed a box plot (also known as a box-and-whisker plot) using a visualization library such as Matplotlib or Seaborn, with the x-axis representing each year and the y-axis showing the distribution of total COVID-19 cases; this plot will illustrate the median, interquartile range, potential outliers and overall spread of case counts for each year.
+Extracting the year from the date column in the dataset ensuring the column is in datetime format and then group or assign each record to its corresponding calendar year. Next, I constructed a box plot (also known as a box-and-whisker plot) using a visualization library such as Matplotlib or Seaborn, with the x-axis representing each year and the y-axis showing the distribution of total COVID-19 cases; this plot will illustrate the median, interquartile range, potential outliers and overall spread of case counts for each year.
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid17.PNG)
 
@@ -154,7 +154,7 @@ Aggregating the dataset to compute the sum of total deaths for each continent (o
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid18.PNG)
 
-The dataset contains a properly formatted date column, then extract the month (if applicable, the year) to create a time-based grouping key for aggregation. Sum the 'total_cases' or 'new_cases' (depending on data structure) for each unique month to obtain monthly case totals, which will serve as the basis for temporal trend analysis. Visualize these aggregated monthly case counts using a bar plot—implemented with Matplotlib, Seaborn or a similar library where the x-axis represents the months (e.g "Jan 2020", "Feb 2020" etc.) and the y-axis shows the number of cases with bars ordered chronologically to clearly reveal patterns, peaks, and declines in case incidence over time.
+The dataset contains a properly formatted date column, then extract the month (if applicable, the year) to create a time-based grouping key for aggregation. Sum the 'total_cases' or 'new_cases' (depending on data structure) for each unique month to obtain monthly case totals, which will serve as the basis for temporal trend analysis. Visualize these aggregated monthly case counts using a bar plot implemented with Matplotlib, Seaborn or a similar library where the x-axis represents the months (e.g "Jan 2020", "Feb 2020" etc.) and the y-axis shows the number of cases with bars ordered chronologically to clearly reveal patterns, peaks, and declines in case incidence over time.
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid19.PNG)
 
