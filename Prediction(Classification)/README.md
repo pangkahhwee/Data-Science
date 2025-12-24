@@ -8,9 +8,8 @@ The project aims to leverage Python for comprehensive data analysis and visualiz
 1. [Step 3 - Problem Definition](#ch3)
 1. [Step 4 - Data Gathering](#ch4)
 1. [Step 5 - Data Preparation](#ch5)
-1. [Step 6 - Explanatory Data Analysis (EDA)](#ch6)
-1. [Step 7 - Data Visualisation using Pandas, Matplotlib and Seaborn](#ch7)
-1. [Step 8 - Conclusion](#ch8)
+1. [Step 6 - Classification of Data using Pandas, Matplotlib and Seaborn](#ch6)
+1. [Step 7 - Conclusion](#ch7)
 
 
 <a id="ch1"></a>
@@ -91,7 +90,7 @@ seaborn (sns): Statistical data visualization with attractive defaults
 
 scatter_matrix: Creates a grid of scatter plots for multiple variables
 
-## 3.2 Preview of the Data
+## Preview of the Data
 To gain an initial understanding of the dataset’s structure, I display the first five rows of the DataFrame using the .head() method. Similarly, I inspected the last five rows by invoking the .tail() method to observe how the data concludes.
 This dual preview helps identify patterns, anomalies or inconsistencies at both ends of the dataset.
 
@@ -99,7 +98,7 @@ This dual preview helps identify patterns, anomalies or inconsistencies at both 
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid4.PNG)
 
-## 3.3 Data Pre-processing: 
+## Data Pre-processing: 
 I began by identifying and removing anomalies and statistical outliers that could distort analytical outcomes, ensuring the dataset’s integrity. Where ddata gaps existed, I carefully imputed missing values using contextually appropriate strategies—such as mean substitution, forward fill or model-based imputation—depending on the nature of the variables. Additionally, I engineered new features to improve model relevance and applied essential transformations, including normalization, encoding categorical variables and scaling, to align the data with analytical requirements.
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid5.PNG)
@@ -124,6 +123,9 @@ I identifying duplicate rows in the DataFrame using the .duplicated() method, wh
 I selected the column that contains country information that typically labeled 'country' and extract all distinct country entries present in the dataset. Next, I wrote a programming(Python) to the same column to obtain a precise count of how many unique countries are represented, which provides a quantitative measure of geographic diversity. 
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid10.PNG)
+
+<a id="ch6"></a>
+## Classification of Data using Pandas, Matplotlib and Seaborn
 
 I grouped the dataset according to the 'Continent' column (which represents WHO regions) and aggregating the total number of confirmed COVID-19 cases and total deaths for each region. Next, I created two separate bar plots—one displaying the total cases and the other the total deaths per WHO region—using a visualization library such as Matplotlib or Seaborn, ensuring that each bar is clearly labeled, axes are appropriately titled and the plots are visually distinct for easy interpretation.
 Finally, I analyze the resulting visualizations to identify regional disparities in pandemic impact and consider enhancing the plots with annotations, color coding or sorting by magnitude to improve clarity and communicative effectiveness.
@@ -176,7 +178,7 @@ I begin by ensuring the dataset contains daily or cumulative records of global t
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid28.PNG)
 
-<a id="ch8"></a>
+<a id="ch7"></a>
 
 ## Conclusion
 
