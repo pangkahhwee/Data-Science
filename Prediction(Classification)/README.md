@@ -1,5 +1,7 @@
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Covid19/Covid1.png)
 
+# Turning pandemic data into insight: A global visual journey through the COVID-19 crisis
+
 The project aims to leverage Python for comprehensive data analysis and visualization. Using the “Our World in Data” dataset, I will explore metrics like cases, deaths, vaccinations and testing across countries. The primary focus is on applying core Python data science libraries: Pandas for data manipulation and Matplotlib and Seaborn for visualization. I will progress through seven key activities, starting with data loading and cleaning data. I will then perform exploratory analysis to understand global and regional trends over time. I will create visualizations like bar charts, line plots and heatmaps to uncover patterns. I will also conduct time-series analysis of daily cases and vaccination rates. A significant component involves in-depth country-specific analysis based on user input. This project further explores derived metrics such as fatality and positivity rates and I will investigate potential correlations with external factors like smoking rates and hospital bed availability. This hands-on project is designed to solidify my practical skills in data cleaning, feature engineering, statistical exploration and effective data storytelling through visualization.
 
 ## Table of Contents
@@ -179,7 +181,7 @@ I begin by ensuring the dataset contains daily or cumulative records of global t
 
 ## Conclusion
 
-This capstone project successfully leveraged Python based data science tools primarily Pandas, Matplotlib and Seaborn to conduct a comprehensive, end-to-end analysis of global COVID-19 data sourced from Our World in Data. Through systematic data cleaning, feature engineering and exploratory data analysis, key insights were uncovered regarding the pandemic’s evolution across time, geography and public health indicators.
+This analysis successfully leveraged Python based data science tools primarily Pandas, Matplotlib and Seaborn to conduct a comprehensive, end-to-end analysis of global COVID-19 data sourced from Our World in Data. Through systematic data cleaning, feature engineering and exploratory data analysis, key insights were uncovered regarding the pandemic’s evolution across time, geography and public health indicators.
 
 The visualizations revealed significant regional disparities: while Asia reported the highest total cases, Europe and the Americas experienced the greatest mortality burden. Temporal analyses highlighted major infection waves, particularly the Omicron surge in early 2022 and demonstrated a global trend toward stabilization and endemicity by 2023–2024. Derived metrics such as fatality and positivity rates illustrated how improved testing, vaccination coverage and clinical management reduced lethality over time, even as case numbers fluctuated.
 
