@@ -6,6 +6,10 @@ This PowerBI project designed to assess the application of essential analytical 
 In the Microsoft Power BI Desktop, I import the data by connecting to a relevant data source (Excel workbooks) containing the following tables: Education, Attrition Rates, Employee Data 2018 – 2019, Job Involvement, Performance Rating, Satisfaction, and Work_Life_Balance. Load each of these tables into the Power BI model using the Get Data functionality, ensuring that data types are correctly inferred and that any unnecessary columns or rows are removed during the initial transformation stage in Power Query Editor. Verify the integrity and granularity of each table to support subsequent data modeling, relationship establishment and analytical reporting.
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR1.png)
+
+Cleanse Data:
+Conduct a thorough assessment of all imported tables to identify and address common data quality issues including but not limited to missing or null values, inconsistent or incorrect data formats (e.g text entries in numeric fields, misaligned date formats) duplicate records and outliers. Utilize Power Query Editor in Microsoft Power BI to perform necessary transformations such as replacing nulls with appropriate defaults or placeholders, standardizing categorical values, converting column data types, trimming extraneous whitespace and filtering out irrelevant or erroneous entries. Document all cleansing steps to ensure reproducibility and data lineage transparency, thereby establishing a reliable and consistent dataset that supports accurate modeling, insightful visualizations and trustworthy business intelligence outcomes.
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR2.png)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR3.png)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR4.png)
