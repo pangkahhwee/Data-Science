@@ -113,10 +113,19 @@ Create another new measure under the Measure table for TotalEmployee
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR27.png)
 
+Insert DAX for TotalEmployee measure
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR28.png)
+
+Create another new measure for %Attrition
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR29.png)
+
+Insert DAX for %Atrition
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR30.png)
+
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR31.png)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR32.png)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR33.png)
