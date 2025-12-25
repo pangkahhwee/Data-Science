@@ -1,12 +1,12 @@
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR90.png)
 
 # Powering HR insights: Visualizing employee attrition & performance in Power BI
-This PowerBI project designed to assess the application of essential analytical and decision-making skills through the end-to-end process of data modelling, analysis and interpretation. I leverage the PowerBI to design and develop insightful, interactive data visualizations, with a specific focus on HR analytics. This project centers on analyzing employee attrition and performance data to uncover trends, identify key drivers and support evidence-based workforce planning and strategic decision-making.
+This Microsoft PowerBI project is designed to assess the application of essential analytical and decision-making skills through the end-to-end process of data modelling, analysis and interpretation. I leverage the Microsoft PowerBI to design and develop insightful, interactive data visualizations, with a specific focus on HR analytics. This project centers on analyzing employee attrition and performance data to uncover trends, identify key drivers and support evidence-based workforce planning and strategic decision-making.
 
-In the Microsoft Power BI Desktop, I import the data by connecting to a relevant data source (Excel workbooks) containing the following tables: Education, Attrition Rates, Employee Data 2018 to 2019, Job Involvement, Performance Rating, Satisfaction, and Work_Life_Balance. Load each of these tables into the Power BI model using the Get Data functionality, ensuring that data types are correctly inferred and that any unnecessary columns or rows are removed during the initial transformation stage in Power Query Editor. Verify the integrity and granularity of each table to support subsequent data modeling, relationship establishment and analytical reporting.
+In the Microsoft Power BI Desktop, I import the data by connecting to a relevant data source (Excel workbooks) containing the following tables: Education, Attrition Rates, Employee Data 2018 to 2019, Job Involvement, Performance Rating, Satisfaction and Work_Life_Balance. I then loaded each of these tables into the Power BI model using the Get Data functionality and ensuring that all the data types are correctly inferred and that any unnecessary columns or rows are removed during the initial transformation stage in Power Query Editor. I had also verified the integrity and granularity of each table to support subsequent data modeling, relationship establishment and analytical reporting.
 
 # Dataset Overview
-The dataset consist of Attrition rate, Education, Employee Data, Job Involvement, Performance rate, Satisfaction & Work Life Balance
+The dataset consist of Attrition rate, Education, Employee Data, Job Involvement, Performance rate, Satisfaction & Work Life Balance. The dataset can be found here: [Dataset](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Dataset/HRAnalyticsEmployeeAttritionPerformance.csv)
 
 ## Attrition rate
 
