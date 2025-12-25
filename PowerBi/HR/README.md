@@ -3,39 +3,117 @@
 # Powering HR Insights: Visualizing Employee Attrition & Performance in Power BI
 This PowerBI project designed to assess the application of essential analytical and decision-making skills through the end-to-end process of data modelling, analysis and interpretation. I leverage the PowerBI to design and develop insightful, interactive data visualizations, with a specific focus on HR analytics. This project centers on analyzing employee attrition and performance data to uncover trends, identify key drivers and support evidence-based workforce planning and strategic decision-making.
 
-In the Microsoft Power BI Desktop, I import the data by connecting to a relevant data source (Excel workbooks) containing the following tables: Education, Attrition Rates, Employee Data 2018 – 2019, Job Involvement, Performance Rating, Satisfaction, and Work_Life_Balance. Load each of these tables into the Power BI model using the Get Data functionality, ensuring that data types are correctly inferred and that any unnecessary columns or rows are removed during the initial transformation stage in Power Query Editor. Verify the integrity and granularity of each table to support subsequent data modeling, relationship establishment and analytical reporting.
+In the Microsoft Power BI Desktop, I import the data by connecting to a relevant data source (Excel workbooks) containing the following tables: Education, Attrition Rates, Employee Data 2018 to 2019, Job Involvement, Performance Rating, Satisfaction, and Work_Life_Balance. Load each of these tables into the Power BI model using the Get Data functionality, ensuring that data types are correctly inferred and that any unnecessary columns or rows are removed during the initial transformation stage in Power Query Editor. Verify the integrity and granularity of each table to support subsequent data modeling, relationship establishment and analytical reporting.
+
+# Dataset Overview
+The dataset consist of Attrition rate, Education, Employee Data, Job Involvement, Performance rate, Satisfaction & Work Life Balance
+
+## Attrition rate
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR1.png)
 
-Cleanse Data:
-Conduct a thorough assessment of all imported tables to identify and address common data quality issues including but not limited to missing or null values, inconsistent or incorrect data formats (e.g text entries in numeric fields, misaligned date formats) duplicate records and outliers. Utilize Power Query Editor in Microsoft Power BI to perform necessary transformations such as replacing nulls with appropriate defaults or placeholders, standardizing categorical values, converting column data types, trimming extraneous whitespace and filtering out irrelevant or erroneous entries. Document all cleansing steps to ensure reproducibility and data lineage transparency, thereby establishing a reliable and consistent dataset that supports accurate modeling, insightful visualizations and trustworthy business intelligence outcomes.
-
+## Employee Data
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR2.png)
+
+## Education 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR3.png)
+
+## Job Involvement 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR4.png)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR5.png)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR6.png)
+
+## Performance Rating
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR7.png)
+
+## Satisfaction 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR8.png)
+
+## Work Life Balance
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR9.png)
+
+## 1. Data Cleaning
+
+The reliability of measures and fields is greatly enhanced through effective data cleaning. Removing duplicate records simplifies data exploration and results in well-structured columns that can be confidently used as slicers and filters. Complex fields can also be split into more interpretable columns, or multiple related columns can be merged to improve clarity and usability.
+
+By default, Power Query profiles only the first 1,000 rows of data. To ensure comprehensive analysis, the profiling setting should be updated via the status bar by selecting Column profiling based on entire data set, allowing the profiling process to reflect the complete dataset.
+
+## Attrition (Before cleaning - with empty rows) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/HR/HR9a.png)
+
+## Attrition (After cleaning - became more readable and straightforward.) 
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/HR/HR9b.png)
+
+## Emplyee Data (Before cleaning - with empty rows) 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR10.png)
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR11.png)
+
+## Emplyee Data (Empty rows removed)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR12.png)
+
+## Employee Data 2018-2025 cleaning columns by using choosing column function
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR13.png)
+
+## Blank columns removed
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/HR/HR13b.png)
+
+# 2.	Data Transformations Applied
+## Attrition rate (adding year column)
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR14.png)
+
+## Attrition rate (insert quarter column)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR15.png)
-![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR16.png)
+
+## Rename Monthly income title (before)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR17.png)
+
+## Monthly income (after using replace value)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR18.png)
+
+## Multiply by 100000 to Monthly income column (Transform -> Standard -> Multiply)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR19.png)
+
+## Choose Fixed decimal format
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR20.png)
+
+## Set currency
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR21.png)
+
+## Final presentation of Monthly income column
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR22.png)
+
+## 3.	Created Columns and Measures
+Data Analysis Expressions (DAX) provides the ability to build three distinct calculation types for your semantic model:
+•	Calculated tables
+•	Calculated columns
+•	Measures
+## Create the Agebin by adding new column
+We can write a DAX formula to add a calculated column to the model.
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR23.png)
+
+Ensure date/time format for Attrition rate
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR24.png)
+
+Measures function as model elements that summarize data. We can write a DAX formula to add a measure to any table in the model. The formula is concerned with achieving summarization over model data. Like calculated column, the formula must return a single value. Measures are only evaluated at query time and their results are never stored in the model.
+Created the Measure table for ActiveEmployee
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR25.png)
+
+Insert DAX for ActiveEmployee
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR26.png)
+
+Insert DAX for InactiveEmployee
+
+![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/HR/HR26b.png)
+
+Create another new measure under the Measure table for TotalEmployee
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR27.png)
+
+
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR28.png)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR29.png)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR30.png)
