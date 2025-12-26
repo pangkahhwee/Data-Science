@@ -1,10 +1,32 @@
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR90.png)
 
 # Powering HR insights: Visualizing employee attrition & performance in Power BI
+
+## Table of Contents
+1. [Introduction](#ch1)
+1. [Dataset Overview](#ch2)
+1. [Problem Definition](#ch3)
+1. [Data Gathering](#ch4)
+1. [Data Preparation](#ch5)
+1. [Explanatory Data Analysis (EDA)](#ch6)
+1. [Data Visualisation using Pandas, Matplotlib and Seaborn](#ch7)
+1. [Data Relationships](#ch8)
+1. [KPI Cards](#ch9)
+1. [Bar Chart](#ch10)
+1. [Stacked Bar Chart](#ch11)
+1. [KPI Cards for Demographics Page](#ch12)
+1. [Combined Chart](#ch13)
+1. [Filter Slicers](#ch14)
+1. [Line and Bar Charts for the Attrition Page](#ch15)
+1. [Final presentation of Attrition page](#ch16)
+
+<a id="ch1"></a>
+## Introduction
 This Microsoft PowerBI project is designed to assess the application of essential analytical and decision-making skills through the end-to-end process of data modelling, analysis and interpretation. I leverage the Microsoft PowerBI to design and develop insightful, interactive data visualizations, with a specific focus on HR analytics. This project centers on analyzing employee attrition and performance data to uncover trends, identify key drivers and support evidence-based workforce planning and strategic decision-making.
 
 In the Microsoft Power BI Desktop, I import the data by connecting to a relevant data source (Excel workbooks) containing the following tables: Education, Attrition Rates, Employee Data 2018 to 2019, Job Involvement, Performance Rating, Satisfaction and Work_Life_Balance. I then loaded each of these tables into the Power BI model using the Get Data functionality and ensuring that all the data types are correctly inferred and that any unnecessary columns or rows are removed during the initial transformation stage in Power Query Editor. I had also verified the integrity and granularity of each table to support subsequent data modeling, relationship establishment and analytical reporting.
 
+<a id="ch2"></a>
 # Dataset Overview
 The dataset consist of Attrition rate, Education, Employee Data, Job Involvement, Performance rate, Satisfaction & Work Life Balance. The dataset can be found here: [Dataset](https://github.com/pangkahhwee/Data-Science/blob/main/Image/Dataset/HRAnalyticsEmployeeAttritionPerformance.csv)
 
@@ -30,6 +52,7 @@ The dataset consist of Attrition rate, Education, Employee Data, Job Involvement
 ## Work Life Balance
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR9.png)
 
+<a id="ch3"></a>
 ## 1. Data Cleaning
 
 The reliability of measures and fields is greatly enhanced through effective data cleaning. Removing duplicate records simplifies data exploration and results in well-structured columns that can be confidently used as slicers and filters. Complex fields can also be split into more interpretable columns, or multiple related columns can be merged to improve clarity and usability.
@@ -56,6 +79,8 @@ By default, Power Query profiles only the first 1,000 rows of data. To ensure co
 ## Blank columns removed
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Data-Science/blob/main/Image/HR/HR13b.png)
 
+<a id="ch4"></a>
+
 # 2.	Data Transformations Applied
 ## Attrition rate (adding year column)
 
@@ -81,6 +106,8 @@ By default, Power Query profiles only the first 1,000 rows of data. To ensure co
 
 ## Final presentation of Monthly income column
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR22.png)
+
+<a id="ch5"></a>
 
 ## 3.	Created Columns and Measures
 Data Analysis Expressions (DAX) provides the ability to build three distinct calculation types for your semantic model:
@@ -137,6 +164,8 @@ Created the Measure table for ActiveEmployee
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR34.png)
 
+<a id="ch6"></a>
+
 # 4. Data Model
 Power BI enables the creation of relationships across tables sourced from different systems, providing a powerful capability to integrate data from Microsoft Excel with tables from relational databases. Once these relationships are established, the tables can be linked and used collectively as a single, integrated semantic model for analysis and reporting.
 
@@ -147,7 +176,7 @@ Power BI enables the creation of relationships across tables sourced from differ
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR36.png)
 
-## b) Link "Job Involvement" to "Employee Data"
+## Link "Job Involvement" to "Employee Data"
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR37.png)
 
@@ -175,6 +204,8 @@ Power BI enables the creation of relationships across tables sourced from differ
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR43.png)
 
+<a id="ch7"></a>
+
 # 5.	Created Hierarchies
 Created a hierachy under agebin
 
@@ -196,6 +227,8 @@ Created a hierachy under agebin
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR48.png)
 
+<a id="ch8"></a>
+
 # 6. Data Relationships
 A well-designed data model adheres to star schema principles when defining relationships between tables. This design approach is widely adopted in relational data warehousing because it provides a clear and intuitive structure while supporting high-performance analytical queries.
 
@@ -203,16 +236,18 @@ In Microsoft Power BI, only one active relationship can exist between any two ta
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR48.png)
 
-
+<a id="ch9"></a>
 # 7. KPI Cards
 Key Performance Indicators (KPIs) are valuable tools for tracking performance and measuring progress against predefined targets over time. Numeric values, often presented using card visuals, act as high-priority indicators that immediately draw attention. They are highly effective in dashboards and analytical reports, as they convey critical information at a glance.
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR49a.png)
 
+<a id="ch10"></a>
 # 8.	Bar Chart
    
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR49.png)
 
+<a id="ch11"></a>
 # 9.	Stacked Bar Chart
     
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR51.png)
@@ -227,6 +262,7 @@ X-axis: Active Employees
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR52.png)
 
+<a id="ch12"></a>
 # 10.	KPI Cards for Demographics Page.
     
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR53.png)
@@ -258,7 +294,7 @@ X-axis: Active Employees
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR59.png)
 
-
+<a id="ch13"></a>
 # 13.	Combined Chart.
 Line and stacked column chart was selected
 
@@ -276,6 +312,7 @@ Line and stacked column chart was selected
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR63.png)
 
+<a id="ch14"></a>
 # 14. Filter Slicers
 Slicers provide a user-friendly interface for navigating reports and are among the most commonly used interactive features in Power BI. They allow users to easily apply, modify, or remove filters, and the built-in search functionality enables rapid identification of specific items for filtering. Due to their simplicity and effectiveness in enabling data exploration, slicers are one of the most widely implemented visuals on report pages.
 
@@ -316,6 +353,7 @@ Max value for Education
 
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR70.png)
 
+<a id="ch15"></a>
 # 15. Line and Bar Charts for the Attrition Page
 Line or column charts should be used when visualizing values across time periods, as they effectively highlight trends and changes over time. The X-axis should represent time in a clear chronological sequence, arranged from the earliest to the most recent periods (left to right), to ensure accurate interpretation and readability.
 
@@ -326,6 +364,7 @@ Line or column charts should be used when visualizing values across time periods
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR73.png)
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR74.png)
 
+<a id="ch16"></a>
 ## Final presentation of Attrition page
 ![Man_coughing.jpg](https://github.com/pangkahhwee/Microsoft_PowerBi/blob/main/image/HR/HR75.png)
 
