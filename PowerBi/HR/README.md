@@ -5,7 +5,7 @@
 ## Table of Contents
 1. [Introduction](#ch1)
 1. [Dataset Overview](#ch2)
-1. [Problem Definition](#ch3)
+1. [Cleaning Data](#ch3)
 1. [Data Gathering](#ch4)
 1. [Data Preparation](#ch5)
 1. [Explanatory Data Analysis (EDA)](#ch6)
